@@ -1,4 +1,0 @@
-Sitemap: https://eduardo-zambrano.github.io/equistatlab/sitemap.xml
-
-User-agent: *
-Disallow:
