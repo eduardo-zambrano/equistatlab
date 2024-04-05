@@ -12,6 +12,4 @@ tags = ["syntax", "code"]
 
 Coming soon...
 
-I have not changed this site in a while.
-
 ---
