@@ -10,6 +10,6 @@ tags = ["syntax", "code"]
 
 # Protected Income and Inequality Aversion
 
-Coming soon...
+In preparation.
 
 ---
