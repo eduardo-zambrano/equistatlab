@@ -13,6 +13,6 @@ tags = ["syntax", "code"]
 In preparation.
 
 ~~~
-<iframe src="https://www.desmos.com/calculator/lr92rqvbow?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/nhhxnyoe5v?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 ~~~
 ---
