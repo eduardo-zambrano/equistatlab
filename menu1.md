@@ -13,6 +13,10 @@ tags = ["syntax", "code"]
 In preparation.
 
 ~~~
-<iframe src="https://www.desmos.com/calculator/4vciwwky24" width="750" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/4vciwwky24" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+~~~
+
+~~~
+<iframe height="400" width="100%" frameborder="no" src="https://datasciencegenie.shinyapps.io/MyShinyApp/"> </iframe>
 ~~~
 ---
