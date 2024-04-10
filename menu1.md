@@ -10,13 +10,28 @@ tags = ["syntax", "code"]
 
 # Protected Income and Inequality Aversion
 
-In preparation.
+When evaluators contemplate a policy reform, they must think about the differential effects those policies may have on different individuals. 
+
+Consider the evaluation of policies relative to a status quo. If the policy generates only winners and no losers relative to the status quo, an evaluator may be strongly inclined to favor the policy over the status quo. Unfortunately, most policy reforms generate both winners and losers, and an evaluator must then determine how to trade off those gains and losses, if a decision must be made.
+
+Below, we consider several ways in which those gains and losses may be assessed. For illustrative purposes, I consider situations where a reform affects only two individuals, and leaves the rest of the individuals unaffected.
+
+## Inequality Neutral
 
 ~~~
-<iframe src="https://www.desmos.com/calculator/4vciwwky24" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/taweg48m95" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 ~~~
 
+## Constant Difference Protected Income
 ~~~
-<iframe height="400" width="100%" frameborder="no" src="https://datasciencegenie.shinyapps.io/MyShinyApp/"> </iframe>
+<iframe src="https://www.desmos.com/calculator/hlqgoa8n1w" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 ~~~
+
+## Constant Relative Protected Income
+~~~
+<iframe src="https://www.desmos.com/calculator/9jv7y6vtuz?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+~~~
+
+
+
 ---
