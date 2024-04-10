@@ -19,17 +19,17 @@ Below, we consider several ways in which those gains and losses may be assessed.
 ## Inequality Neutral
 
 ~~~
-<iframe src="https://www.desmos.com/calculator/taweg48m95" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/m6lqfgk4kj?embed" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 ~~~
 
 ## Constant Difference Protected Income
 ~~~
-<iframe src="https://www.desmos.com/calculator/hlqgoa8n1w" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/g9uelyxnbc?embed" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 ~~~
 
 ## Constant Relative Protected Income
 ~~~
-<iframe src="https://www.desmos.com/calculator/9jv7y6vtuz?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/c0csn0sbia?embed" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 ~~~
 
 
