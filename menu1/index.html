@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
    <link rel="stylesheet" href="/libs/highlight/styles/github.min.css">
    
   <link rel="stylesheet" href="/css/jtd.css">
@@ -69,21 +70,24 @@
 <!-- Content appended here (in class franklin-content) -->
 <div class="franklin-content">
 <h1 id="protected_income_and_inequality_aversion"><a href="#protected_income_and_inequality_aversion" class="header-anchor">Protected Income and Inequality Aversion</a></h1>
-<p>When evaluators contemplate a policy reform, they must think about the differential effects those policies may have on different individuals. </p>
-<p>Consider the evaluation of policies relative to a status quo. If the policy generates only winners and no losers relative to the status quo, an evaluator may be strongly inclined to favor the policy over the status quo. Unfortunately, most policy reforms generate both winners and losers, and an evaluator must then determine how to trade off those gains and losses, if a decision must be made.</p>
-<p>Below, we consider several ways in which those gains and losses may be assessed. For illustrative purposes, I consider situations where a reform affects only two individuals, and leaves the rest of the individuals unaffected.</p>
-<h2 id="inequality_neutral"><a href="#inequality_neutral" class="header-anchor">Inequality Neutral</a></h2>
+<p>The material below is based on work in progress by &#91;Eduardo Zambrano&#93;&#40;https://eduardo-zambrano.github.io/ and <a href="https://sites.google.com/site/marcfleurbaey/Home">Marc Fleurbaey</a>.</p>
+<p>When evaluators contemplate a policy reform, they must think about the differential effects those policies may have on different individuals. Below we contemplate the evaluation of policy reforms relative to a status quo. If the policy reform generates only winners and no losers relative to the status quo, an evaluator may be strongly inclined to favor the reform over the status quo. Unfortunately, most policy reforms generate both winners and losers, and an evaluator must then determine how to trade off those gains and losses, if a decision must be made.</p>
+<p>Let&#39;s consider several ways in which those gains and losses may be assessed. For illustrative purposes, we consider situations where a reform affects only two individuals, and leaves the rest of the individuals unaffected. </p>
+<p>In the illustration below, income is used as the index of individual advantage in, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income &#40;usually called “equivalent income”&#41; as the relevant index instead of ordinary income.</p>
+<h2 id="inequality_neutral_in"><a href="#inequality_neutral_in" class="header-anchor">Inequality Neutral &#40;IN&#41;</a></h2>
+<p>The IN evaluator only cares about the total sum of income associated with a policy, and not with its distribution.</p>
 
 <iframe src="https://www.desmos.com/calculator/m6lqfgk4kj?embed" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
-<h2 id="constant_difference_protected_income"><a href="#constant_difference_protected_income" class="header-anchor">Constant Difference Protected Income</a></h2>
+<h2 id="constant_difference_protected_income_cdpi"><a href="#constant_difference_protected_income_cdpi" class="header-anchor">Constant Difference Protected Income &#40;CDPI&#41;</a></h2>
+<p>An evaluator with CDPI social preferences would reject policies that, when compared to a status quo of equality, entail one of the individuals losing more than a certain amount of income, \(L\), with \(L\) being constant for all income levels, \(y\), in the status quo.</p>
 
-<iframe src="https://www.desmos.com/calculator/g9uelyxnbc?embed" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/fctoakmwnd?embed" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
-<h2 id="constant_relative_protected_income"><a href="#constant_relative_protected_income" class="header-anchor">Constant Relative Protected Income</a></h2>
-
+<h2 id="constant_relative_protected_income_crpi"><a href="#constant_relative_protected_income_crpi" class="header-anchor">Constant Relative Protected Income &#40;CRPI&#41;</a></h2>
+<p>An evaluator with CRPI social preferences would reject policies that, when compared to a status quo of equality, entail one of the individuals losing more than a certain fraction of income, \(k\), with \(k\) being constant for all income levels, \(y\), in the status quo. 
 <iframe src="https://www.desmos.com/calculator/c0csn0sbia?embed" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-
+</p>
 <hr />
 <div class="page-foot">
     <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Eduardo Zambrano. Last modified: April 10, 2024.
@@ -93,6 +97,11 @@
     </div> <!-- end of class main-content -->
     </div> <!-- end of class main-content-wrap -->
     </div> <!-- end of class page-wrap-->
+    
+      <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/contrib/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
     
     
       <script src="/libs/highlight/highlight.min.js"></script>
