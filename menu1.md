@@ -73,7 +73,7 @@ The choice of generator determines the kind of evaluator we are facing. In parti
 
 * The *CRPI* evaluator is associated with the generator $f(y)=-y^{\frac{1}{log_2 k}}$  for $k\in(0,1)$.
 
-These last two are interpretable representations of the Kolm-Pollak and the Kolm-Atkinson *prioritarian* social preferences, respectively. See `Fleurbaey and Zambrano 2024` for details.
+These last two are interpretable representations of the Kolm-Pollak and a sub-class of the Kolm-Atkinson *prioritarian* social preferences, respectively. See `Fleurbaey and Zambrano 2024` for details.
 
 
 
