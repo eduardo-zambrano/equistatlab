@@ -18,7 +18,7 @@ Here, income is used as the index of individual advantage, but the analysis is r
 
 For illustrative purposes, we consider below situations where a reform affects only two individuals, starting from a position where they have the same income, and leaves the rest of the individuals in society unaffected. 
 
-## Inequality Neutral (IN)
+## Inequality Neutral Evaluations
 An *inequality neutral* (*IN*) evaluator only cares about the total sum of income associated with a policy, and not with its distribution. Any such evaluator, however, would accept a policy that generates a large enough gain for one individual even if it means sacrificing all the income of the other individual. Figure 1 below illustrates. The orange line depicts the combinations of income for both individuals that leave the evaluator indifferent. Notice that the orange line hits the axes of the graph, meaning that if a policy generates a large enough income for one of the individuals, the evaluator will accept the policy even if it comes at the expense of the totality of the income of the other individual. This is so when, for example, the status quo is the income profile $(200,200)$, and the policy reform produces instead the income profile $(0,500)$, which corresponds to the purple dot in Figure 1.   
 
 ~~~
@@ -30,7 +30,7 @@ An *inequality neutral* (*IN*) evaluator only cares about the total sum of incom
 
 Evaluators finding this type of income sacrifice unacceptable would accept policies that lead to smaller total income, if the policies reduce inequality and are therefore *inequality averse*. Below we describe two possible ways in which evaluators may operationalize their inequality aversion.
 
-## Constant Difference Protected Income (CDPI)
+## Constant Difference Protected Income Evaluations
 An evaluator with social preferences characterized by *constant difference protected income* (*CDPI*) would reject policies that, when compared to a status quo of equality, entail one of the individuals losing more than a certain amount of income, $L$, with $L$ being constant for all income levels, $y$, in the status quo, and $y>L$. Figure 2 below illustrates. The black dot denotes the status quo and the green line depicts the combinations of income for both individuals that leave the evaluator indifferent. Notice that the green line does not hits the axes of the graph, meaning that if a policy generates a loss larger than $L$ for one of the individuals, the evaluator will reject the policy no matter how large the gain is for the other individual. The green dashed lines show that, as the income of one of the individuals grows without bound, the income for the other individual stays above $y-L$. In the figure, the length of the red horizontal segment denotes the maximal acceptable loss, $L$.
 
 To understand these social preferences in some more depth, the reader may want to increase $L$ by 'dragging' the green dot towards the origin, which flattens the green line and makes the evaluator less inequality averse. Dragging the green dot towards the black dot, that is, towards the point $(y,y)$, makes $L$ smaller, and therefore makes the evaluator more inequality averse.
@@ -46,7 +46,7 @@ An evaluator with *CDPI* preferences, however, would sacrifice the income of one
 
 This essentially says that the *CDPI* social preferences do not embed enough inequality aversion, especially for the poorest individuals in society. It would be desirable for the maximal acceptable loss to be smaller, the smaller the income of the individual is to begin with. To social preferences with that property we turn our attention to below.
 
-## Constant Relative Protected Income (CRPI)
+## Constant Relative Protected Income Evaluations
 An evaluator with social preferences characterized by *constant relative protected income* (*CDPI*) would reject policies that, when compared to a status quo of equality, entail one of the individuals losing more than a certain fraction of income, $(1-k)$, with $k$ being constant for all income levels, $y$, in the status quo.
 
 Figure 3 below illustrates. The black dot denotes the status quo and the blue line depicts the combinations of income for both individuals that leave the evaluator indifferent. Notice that the blue line does not hits the axes of the graph, meaning that if a policy generates a loss larger than $(1-k)y$ for one of the individuals, the evaluator will reject the policy no matter how large the gain is for the other individual. The blue dashed lines show that, as the income of one of the individuals grows without bound, the income for the other individual stays above $ky$. In the figure, the length of the purple horizontal segment denotes the maximal acceptable loss, $(1-k)y$.
@@ -61,19 +61,21 @@ To understand these social preferences at some more depth, the reader may want t
 ~~~
 
 ## Technical
-The evaluators above all rank income profiles according to their [egalitarian equivalent](https://en.wikipedia.org/wiki/Quasi-arithmetic_mean). The *egalitarian equivalent* of the income profile $(y_1,...,y_n)$ in a society with $n$ individuals is given by $ee(y_1,...,y_n)=f^{-1}\left(\frac{f(y_1)+...+f(y_n)}{n}\right)$ for some continuous and strictly increasing function $f$, called the generator. 
+It is important to be very deliberate about what is it that is being compared across individuals. As we said above, income here is used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income, usually called “equivalent income” or “money-metric utility,” as the relevant index instead of ordinary income. See, e.g., [Fleurbaey and Blanchet 2013, Ch. 4](https://academic.oup.com/book/37245/chapter/330083193) for an extensive discussion on this.
 
-The *egalitarian equivalent* has the following interpretation: it is the income level, $ee$, such that the evaluator is indifferent betwen a society with income profile $(y_1,...,y_n)$ and a society where all individuals have income $ee$.
+All the evaluators above rank income profiles according to their contribution to [Social Welfare](https://en.wikipedia.org/wiki/Social_welfare_function). The *social welfare* of the income profile $(y_1,...,y_n)$ in a society with $n$ individuals is given by $W(y_1,...,y_n)=f(y_1)+...+f(y_n)$ for some continuous and strictly increasing function $f$, called the *generator* of $W$. 
 
 The choice of generator determines the kind of evaluator we are facing. In particular:
 
 * The *IN* evaluator is associated with the generator $f(y)=y.$
 
-* The *CDPI* evaluator is associated with the generator $f(y)=-2^{-\frac{y}{L}}$ for $L>0$.
+* All inequality averse evaluators are associated with strictly concave generators. In particular,
 
-* The *CRPI* evaluator is associated with the generator $f(y)=-y^{\frac{1}{log_2 k}}$  for $k\in(0,1)$.
+- The *CDPI* evaluator is associated with the generator $f(y)=-2^{-\frac{y}{L}}$ for $L>0$.
 
-These last two are interpretable representations of the Kolm-Pollak and a sub-class of the Kolm-Atkinson *prioritarian* social preferences, respectively. See `Fleurbaey and Zambrano 2024` for details.
+- The *CRPI* evaluator is associated with the generator $f(y)=-y^{\frac{1}{log_2 k}}$  for $k\in(0,1)$.
+
+These last two are interpretable representations of (1) the Kolm-Pollak [*prioritarian*](https://www.cambridge.org/core/books/prioritarianism-in-practice/introduction/22CF2479EE6187C11314621EA1AE1B54) social preferences and (2) a sub-class of the Kolm-Atkinson prioritarian social preferences, respectively. See `Fleurbaey and Zambrano 2024` for details.
 
 
 
