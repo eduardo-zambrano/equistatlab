@@ -61,7 +61,9 @@ To understand these social preferences at some more depth, the reader may want t
 ~~~
 
 ## Technical
-The evaluators above all rank income profiles according to their [quasi-arithmetic mean](https://en.wikipedia.org/wiki/Quasi-arithmetic_mean). The *quasi-arithmetic mean* of the income profile $(y_1,...,y_n)$ in a society with $n$ individuals is given by $f^{-1}\left(\frac{f(y_1)+...+f(y_n)}{n}\right)$ for some continuous and strictly increasing function $f$, called the generator. 
+The evaluators above all rank income profiles according to their [egalitarian equivalent](https://en.wikipedia.org/wiki/Quasi-arithmetic_mean). The *egalitarian equivalent* of the income profile $(y_1,...,y_n)$ in a society with $n$ individuals is given by $ee(y_1,...,y_n)=f^{-1}\left(\frac{f(y_1)+...+f(y_n)}{n}\right)$ for some continuous and strictly increasing function $f$, called the generator. 
+
+The *egalitarian equivalent* has the following interpretation: it is the income level, $ee$, such that the evaluator is indifferent betwen a society with income profile $(y_1,...,y_n)$ and a society where all individuals have income $ee$.
 
 The choice of generator determines the kind of evaluator we are facing. In particular:
 
