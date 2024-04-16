@@ -68,7 +68,7 @@ uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
 
 [[deps.Franklin]]
 deps = ["Dates", "DelimitedFiles", "DocStringExtensions", "ExprTools", "FranklinTemplates", "HTTP", "Literate", "LiveServer", "Logging", "Markdown", "NodeJS", "OrderedCollections", "Pkg", "REPL", "Random", "TOML"]
-git-tree-sha1 = "89ecf58d2deea135282d8fa5e847fe340f452e6e"
+git-tree-sha1 = "99cd391741728317235bffc98a6cb0dc816dae65"
 repo-rev = "master"
 repo-url = "https://github.com/tlienart/Franklin.jl.git"
 uuid = "713c75ef-9fc9-4b05-94a9-213340da978e"
