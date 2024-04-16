@@ -11,5 +11,9 @@ tags = ["syntax", "code", "image"]
 # Social Preferences under uncertainty and ambiguity
 
 Coming soon...
-
+~~~
+<iframe src="https://eduardo-zambrano.github.io/ocob_seminars/" width="100%" height="500px" style="border:none;">
+    This feature requires inline frames. You have iframes disabled or your browser does not support them.
+</iframe>
+~~~
 ---
