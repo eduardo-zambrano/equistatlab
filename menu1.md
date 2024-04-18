@@ -61,13 +61,13 @@ To understand these social preferences at some more depth, the reader may want t
 ~~~
 
 ## Technical
-It is important to be very deliberate about what is it that is being compared across individuals. In the preceeding sections, income was used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income, usually called [“equivalent income”](https://academic.oup.com/book/37245/chapter/330083193) or “money-metric utility,” as the relevant index instead of ordinary income. Below we adopt this point of view and consider evaluators with preferences over profiles of equivalent incomes.
+It is important to be very deliberate about what is it that is being compared across individuals. As mentioned above, in the preceeding sections, income was used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income, usually called [“equivalent income”](https://academic.oup.com/book/37245/chapter/330083193) or “money-metric utility,” as the relevant index instead of ordinary income. Below we adopt this point of view and consider evaluators with preferences over profiles of equivalent incomes.
 
 All the evaluators considered in the previous sections rank equivalent income profiles according to social preferences that admit a [Social Welfare](https://en.wikipedia.org/wiki/Social_welfare_function) representation. The *social welfare* of the equivalent income profile $(y_1,...,y_n)$ in a society with $n$ individuals is given by $W(y_1,...,y_n)=f(y_1)+...+f(y_n)$ for some continuous and strictly increasing function $f$, called the *generator* of $W$. 
 
 The choice of generator determines the kind of evaluator we are facing. In particular:
 
-* The *IN* evaluator is associated with the linear ([*utilitarian*])(https://en.wikipedia.org/wiki/Utilitarianism) generator $f(y)=y.$
+* The *IN* evaluator is associated with the linear ([*utilitarian*](https://en.wikipedia.org/wiki/Utilitarianism)) generator $f(y)=y.$
 
 * All *inequality averse* evaluators (*IA*) are associated with strictly concave ([*prioritarian*](https://www.cambridge.org/core/books/prioritarianism-in-practice/introduction/22CF2479EE6187C11314621EA1AE1B54))  generators. In particular,
 
