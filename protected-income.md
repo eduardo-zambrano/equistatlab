@@ -1,15 +1,15 @@
 +++
 title = "Protected Income and Inequality Aversion"
 hascode = true
-date = Date(2019, 3, 22)
-rss = "A short description of the page which would serve as **blurb** in a `RSS` feed; you can use basic markdown here but the whole description string must be a single line (not a multiline string). Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don't expect maths or fancy styling to work; images should be ok though: ![](https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg)"
+date = Date(2024, 4, 18)
+rss = "We develop a methodology for determining an evaluator's social preferences based on the tradeoffs between the well-being of different individuals that the evaluator considers acceptable."
 
 tags = ["syntax", "code"]
 +++
 
 
 # Protected Income and Inequality Aversion
-The material below is based on work in progress by [Eduardo Zambrano](https://eduardo-zambrano.github.io/) and [Marc Fleurbaey](https://sites.google.com/site/marcfleurbaey/Home).
+The material below is based on the project [Protected Income and Inequality Aversion](https://osf.io/tnu2q/), by [Marc Fleurbaey](https://sites.google.com/site/marcfleurbaey/Home) and [Eduardo Zambrano](https://eduardo-zambrano.github.io/).
 
 ## Introduction
 When evaluators contemplate a policy reform, they must think about the differential effects those policies may have on different individuals. Below we contemplate the evaluation of policy reforms relative to a *status quo*. If a policy reform generates only winners and no losers relative to the status quo, an evaluator may be strongly inclined to favor the reform. Unfortunately, most policy reforms generate both winners and losers, and an evaluator must then determine how to trade off any income gains and losses that the reform generates. In our research, we consider several ways in which those gains and losses may be assessed and compared. 
@@ -61,9 +61,9 @@ To understand these social preferences at some more depth, the reader may want t
 ~~~
 
 ## Technical
-It is important to be very deliberate about what is it that is being compared across individuals. As mentioned above, in the preceeding sections, income was used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income, usually called [“equivalent income”](https://academic.oup.com/book/37245/chapter/330083193) or “money-metric utility,” as the relevant index instead of ordinary income. Below we adopt this point of view and consider evaluators with preferences over profiles of equivalent incomes.
+It is important to be very deliberate about what is it that is being compared across individuals. In the preceeding sections income was used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income, usually called [“equivalent income”](https://academic.oup.com/book/37245/chapter/330083193) or “money-metric utility,” as the relevant index instead of ordinary income. Below we adopt this point of view and consider evaluators with preferences over profiles of equivalent incomes.
 
-All the evaluators considered in the previous sections rank equivalent income profiles according to social preferences that admit a [Social Welfare](https://en.wikipedia.org/wiki/Social_welfare_function) representation. The *social welfare* of the equivalent income profile $(y_1,...,y_n)$ in a society with $n$ individuals is given by $W(y_1,...,y_n)=f(y_1)+...+f(y_n)$ for some continuous and strictly increasing function $f$, called the *generator* of $W$. 
+All the evaluators we consider rank equivalent income profiles according to social preferences that admit an additively separable [Social Welfare](https://en.wikipedia.org/wiki/Social_welfare_function) representation. The *social welfare* of the equivalent income profile $(y_1,...,y_n)$ in a society with $n$ individuals is given by $W(y_1,...,y_n)=f(y_1)+...+f(y_n)$ for some continuous and strictly increasing function $f$, called the *generator* of $W$. 
 
 The choice of generator determines the kind of evaluator we are facing. In particular:
 
@@ -73,9 +73,14 @@ The choice of generator determines the kind of evaluator we are facing. In parti
 
 - The *CDPI* evaluator is the prioritarian evaluator associated with the generator $f(y)=-2^{-\frac{y}{L}}$ for $L>0$.
 
-- The *CRPI* evaluator is the prioritarian evaluator associated with the  generator $f(y)=-y^{\frac{1}{log_2 (1-l)}}$  for $l\in(0,1)$.
+- The *CRPI* evaluator is the prioritarian evaluator associated with the  generator $f(y)=\log_2 (k) y^{\frac{1}{\log_2 (k)}}$  for $k>0$.
 
-These last two are interpretable representations of (1) the Kolm-Pollak social preferences and (2) a sub-class of the Kolm-Atkinson prioritarian social preferences, respectively. See `Fleurbaey and Zambrano 2024` for details.
+These last two are interpretable representations of (1) the Kolm-Pollak social preferences and (2) the Kolm-Atkinson prioritarian social preferences, respectively. 
+
+As discussed above, none of the Kolm-Pollak evaluators would offer income protection to individuals whose income was less than $L$. Past that income level, they protect an increasing fraction of income given by $1 - \frac{L}{y}$. On the other hand, Kolm-Atkinson evaluators would offer no income protection at any income level, for $k \ge 1$, and protect a constant fraction of income, $k$, for $k\in(0,1)$.
+
+Motivated by these findings, we propose a class of social preferences
+that, starting from a baseline level of protection, protect a higher fraction of the sacrificed individual's income the lower their income. In addition to relating levels of protected income to coefficients of inequality, we also characterize the classes of additively separable social welfare functions that guarantee specific (absolute or relative) levels of protection. See [Fleurbaey and Zambrano 2024](https://osf.io/tnu2q/) for details.
 
 
 
