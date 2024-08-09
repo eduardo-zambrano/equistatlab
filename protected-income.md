@@ -73,11 +73,11 @@ The choice of generator determines the kind of evaluator we are facing. In parti
 
 - The *CDPI* evaluator is the prioritarian evaluator associated with the generator $f(y)=-2^{-\frac{y}{L}}$ for $L>0$.
 
-- The *CRPI* evaluator is the prioritarian evaluator associated with the  generator $f(y)=\log_2 (k) y^{\frac{1}{\log_2 (k)}}$  for $k>0$.
+- The *CRPI* evaluator is the prioritarian evaluator associated with the  generator $f(y)= - y^{\frac{1}{\log_2 (k)}}$  for $k\in(0,1)$.
 
-These last two are interpretable representations of (1) the Kolm-Pollak social preferences and (2) the Kolm-Atkinson prioritarian social preferences, respectively. 
+These last two are interpretable representations of (1) the Kolm-Pollak social preferences and (2) a subclass of the Kolm-Atkinson prioritarian social preferences, respectively. 
 
-As discussed above, none of the Kolm-Pollak evaluators would offer income protection to individuals whose income was less than $L$. Past that income level, they protect an increasing fraction of income given by $1 - \frac{L}{y}$. On the other hand, Kolm-Atkinson evaluators would offer no income protection at any income level, for $k \ge 1$, and protect a constant fraction of income, $k$, for $k\in(0,1)$.
+We mentioned above that none of the Kolm-Pollak evaluators would offer income protection to individuals whose income was less than $L$. Past that income level, they protect a fraction of income given by $1 - \frac{L}{y}$. Notice that this fraction is smaller, the smaller the income level, $y$, in the status quo. On the other hand, Kolm-Atkinson evaluators protect a constant fraction of income, $k$.
 
 Motivated by these findings, we propose a class of social preferences
 that, starting from a baseline level of protection, protect a higher fraction of the sacrificed individual's income the lower their income. In addition to relating levels of protected income to coefficients of inequality, we also characterize the classes of additively separable social welfare functions that guarantee specific (absolute or relative) levels of protection. See [Fleurbaey and Zambrano 2024](https://osf.io/tnu2q/) for details.
