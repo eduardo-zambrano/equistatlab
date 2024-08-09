@@ -42,7 +42,7 @@
     <div class="menu" id="side-menu">
       <ul class="menu-list">
         <li class="menu-list-item "><a href="/" class="menu-list-link ">Home</a>
-        <li class="menu-list-item active"><a href="/menu1/" class="menu-list-link active">Protected income and inequality aversion</a>
+        <li class="menu-list-item "><a href="/protected-income" class="menu-list-link active">Protected income and inequality aversion</a>
         <li class="menu-list-item "><a href="/menu2/" class="menu-list-link ">Social preferences under uncertainty and ambiguity</a>
         <li class="menu-list-item "><a href="/menu3/" class="menu-list-link ">Egalitarian equivalent treatment effect estimation</a>
         <li class="menu-list-item "><a href="/menu4/" class="menu-list-link ">People</a>
@@ -70,7 +70,7 @@
 <!-- Content appended here (in class franklin-content) -->
 <div class="franklin-content">
 <h1 id="protected_income_and_inequality_aversion"><a href="#protected_income_and_inequality_aversion" class="header-anchor">Protected Income and Inequality Aversion</a></h1>
-<p>The material below is based on work in progress by <a href="https://eduardo-zambrano.github.io/">Eduardo Zambrano</a> and <a href="https://sites.google.com/site/marcfleurbaey/Home">Marc Fleurbaey</a>.</p>
+<p>The material below is based on the project <a href="https://osf.io/tnu2q/">Protected Income and Inequality Aversion</a>, by <a href="https://sites.google.com/site/marcfleurbaey/Home">Marc Fleurbaey</a> and <a href="https://eduardo-zambrano.github.io/">Eduardo Zambrano</a>.</p>
 <h2 id="introduction"><a href="#introduction" class="header-anchor">Introduction</a></h2>
 <p>When evaluators contemplate a policy reform, they must think about the differential effects those policies may have on different individuals. Below we contemplate the evaluation of policy reforms relative to a <em>status quo</em>. If a policy reform generates only winners and no losers relative to the status quo, an evaluator may be strongly inclined to favor the reform. Unfortunately, most policy reforms generate both winners and losers, and an evaluator must then determine how to trade off any income gains and losses that the reform generates. In our research, we consider several ways in which those gains and losses may be assessed and compared. </p>
 <p>Here, income is used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income &#40;usually called “equivalent income”&#41; as the relevant index instead of ordinary income.</p>
@@ -106,8 +106,8 @@
 </div>
 
 <h2 id="technical"><a href="#technical" class="header-anchor">Technical</a></h2>
-<p>It is important to be very deliberate about what is it that is being compared across individuals. As mentioned above, in the preceeding sections, income was used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income, usually called <a href="https://academic.oup.com/book/37245/chapter/330083193">“equivalent income”</a> or “money-metric utility,” as the relevant index instead of ordinary income. Below we adopt this point of view and consider evaluators with preferences over profiles of equivalent incomes.</p>
-<p>All the evaluators considered in the previous sections rank equivalent income profiles according to social preferences that admit a <a href="https://en.wikipedia.org/wiki/Social_welfare_function">Social Welfare</a> representation. The <em>social welfare</em> of the equivalent income profile \((y_1,...,y_n)\) in a society with \(n\) individuals is given by \(W(y_1,...,y_n)=f(y_1)+...+f(y_n)\) for some continuous and strictly increasing function \(f\), called the <em>generator</em> of \(W\). </p>
+<p>It is important to be very deliberate about what is it that is being compared across individuals. In the preceeding sections income was used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income, usually called <a href="https://academic.oup.com/book/37245/chapter/330083193">“equivalent income”</a> or “money-metric utility,” as the relevant index instead of ordinary income. Below we adopt this point of view and consider evaluators with preferences over profiles of equivalent incomes.</p>
+<p>All the evaluators we consider rank equivalent income profiles according to social preferences that admit an additively separable <a href="https://en.wikipedia.org/wiki/Social_welfare_function">Social Welfare</a> representation. The <em>social welfare</em> of the equivalent income profile \((y_1,...,y_n)\) in a society with \(n\) individuals is given by \(W(y_1,...,y_n)=f(y_1)+...+f(y_n)\) for some continuous and strictly increasing function \(f\), called the <em>generator</em> of \(W\). </p>
 <p>The choice of generator determines the kind of evaluator we are facing. In particular:</p>
 <ul>
 <li><p>The <em>IN</em> evaluator is associated with the linear &#40;<a href="https://en.wikipedia.org/wiki/Utilitarianism"><em>utilitarian</em></a>&#41; generator \(f(y)=y.\)</p>
@@ -116,13 +116,15 @@
 </li>
 <li><p>The <em>CDPI</em> evaluator is the prioritarian evaluator associated with the generator \(f(y)=-2^{-\frac{y}{L}}\) for \(L>0\).</p>
 </li>
-<li><p>The <em>CRPI</em> evaluator is the prioritarian evaluator associated with the  generator \(f(y)=-y^{\frac{1}{log_2 (1-l)}}\)  for \(l\in(0,1)\).</p>
+<li><p>The <em>CRPI</em> evaluator is the prioritarian evaluator associated with the  generator \(f(y)=\log_2 (k) y^{\frac{1}{\log_2 (k)}}\)  for \(k>0\).</p>
 </li>
 </ul>
-<p>These last two are interpretable representations of &#40;1&#41; the Kolm-Pollak social preferences and &#40;2&#41; a sub-class of the Kolm-Atkinson prioritarian social preferences, respectively. See <code>Fleurbaey and Zambrano 2024</code> for details.</p>
+<p>These last two are interpretable representations of &#40;1&#41; the Kolm-Pollak social preferences and &#40;2&#41; the Kolm-Atkinson prioritarian social preferences, respectively. </p>
+<p>As discussed above, none of the Kolm-Pollak evaluators would offer income protection to individuals whose income was less than \(L\). Past that income level, they protect an increasing fraction of income given by \(1 - \frac{L}{y}\). On the other hand, Kolm-Atkinson evaluators would offer no income protection at any income level, for \(k \ge 1\), and protect a constant fraction of income, \(k\), for \(k\in(0,1)\).</p>
+<p>Motivated by these findings, we propose a class of social preferences that, starting from a baseline level of protection, protect a higher fraction of the sacrificed individual&#39;s income the lower their income. In addition to relating levels of protected income to coefficients of inequality, we also characterize the classes of additively separable social welfare functions that guarantee specific &#40;absolute or relative&#41; levels of protection. See <a href="https://osf.io/tnu2q/">Fleurbaey and Zambrano 2024</a> for details.</p>
 <hr />
 <div class="page-foot">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Eduardo Zambrano. Last modified: April 18, 2024.
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Eduardo Zambrano. Last modified: August 09, 2024.
     Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
 </div>
 </div><!-- CONTENT ENDS HERE -->

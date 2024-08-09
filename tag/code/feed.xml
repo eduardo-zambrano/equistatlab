@@ -23,15 +23,15 @@
 
 <item>
   <title>
-    <![CDATA[  Social Preferences under uncertainty and ambiguity  ]]>
+    <![CDATA[  Protected Income and Inequality Aversion  ]]>
   </title>
-  <link> https://eduardo-zambrano.github.io/equistatlab/menu2/index.html </link>
-  <guid> https://eduardo-zambrano.github.io/equistatlab/menu2/index.html </guid>
+  <link> https://eduardo-zambrano.github.io/equistatlab/protected-income/index.html </link>
+  <guid> https://eduardo-zambrano.github.io/equistatlab/protected-income/index.html </guid>
   <description>
-    <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Rick_and_Morty_characters.jpg" alt="" />  ]]>
+    <![CDATA[  We develop a methodology for determining an evaluator&#39;s social preferences based on the tradeoffs between the well-being of different individuals that the evaluator considers acceptable.  ]]>
   </description>  
     
-  <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>  
+  <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>  
   
   
   <atom:author>
@@ -42,15 +42,15 @@
 
 <item>
   <title>
-    <![CDATA[  Protected Income and Inequality Aversion  ]]>
+    <![CDATA[  Social Preferences under uncertainty and ambiguity  ]]>
   </title>
-  <link> https://eduardo-zambrano.github.io/equistatlab/menu1/index.html </link>
-  <guid> https://eduardo-zambrano.github.io/equistatlab/menu1/index.html </guid>
+  <link> https://eduardo-zambrano.github.io/equistatlab/menu2/index.html </link>
+  <guid> https://eduardo-zambrano.github.io/equistatlab/menu2/index.html </guid>
   <description>
-    <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rick_and_Morty_opening_credits.jpeg" alt="" />  ]]>
+    <![CDATA[  A short description of the page which would serve as <strong>blurb</strong> in a <code>RSS</code> feed; you can use basic markdown here but the whole description string must be a single line &#40;not a multiline string&#41;. Like this one for instance. Keep in mind that styling is minimal in RSS so for instance don&#39;t expect maths or fancy styling to work; images should be ok though: <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Rick_and_Morty_characters.jpg" alt="" />  ]]>
   </description>  
     
-  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
+  <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>  
   
   
   <atom:author>
