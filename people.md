@@ -4,7 +4,7 @@ title = "People"
 
 # People
 
-## Grant Personnel
+## Principal Investigator (PI)
 - [Eduardo Zambrano](https://eduardo-zambrano.github.io/)
 
 ## Collaborators
