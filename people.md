@@ -4,6 +4,7 @@ title = "People"
 
 # People
 
+## Grant Personnel
 - [Eduardo Zambrano](https://eduardo-zambrano.github.io/)
 
 ## Collaborators
