@@ -4,8 +4,9 @@ title = "People"
 
 # People
 
-## Researchers
 - [Eduardo Zambrano](https://eduardo-zambrano.github.io/)
+
+## Collaborators
 - [Marc Fleurbaey](https://sites.google.com/site/marcfleurbaey/Home)
 - [Carlos Flores](https://sites.google.com/view/carlosaflores)
 
