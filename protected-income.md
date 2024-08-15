@@ -77,10 +77,10 @@ The choice of generator determines the kind of evaluator we are facing. In parti
 
 These last two are interpretable representations of (1) the Kolm-Pollak social preferences and (2) a subclass of the Kolm-Atkinson prioritarian social preferences, respectively. 
 
-We mentioned above that none of the Kolm-Pollak evaluators would offer income protection to individuals whose income was less than $L$. Past that income level, they protect a fraction of income given by $1 - \frac{L}{y}$. Notice that this fraction is smaller, the smaller the income level, $y$, in the status quo. On the other hand, Kolm-Atkinson evaluators protect a constant fraction of income, $k$.
+We mentioned above that none of the Kolm-Pollak evaluators would offer income protection to individuals whose income was less than $L$. Past that income level, they protect a fraction of income given by $1 - \frac{L}{y}$. Notice that this fraction is smaller, the smaller the income level, $y$, in the status quo. On the other hand, the Kolm-Atkinson evaluators considered above protect a constant fraction of income, $k$.
 
 Motivated by these findings, we propose a class of social preferences
-that, starting from a baseline level of protection, protect a higher fraction of the sacrificed individual's income the lower their income. In addition to relating levels of protected income to coefficients of inequality, we also characterize the classes of additively separable social welfare functions that guarantee specific (absolute or relative) levels of protection. See [Fleurbaey and Zambrano 2024](https://osf.io/tnu2q/) for details.
+that, starting from a baseline level of protection, protect a higher fraction of the sacrificed individual's income the lower their income. In addition to relating levels of protected income to coefficients of inequality, we also characterize the classes of additively separable social welfare functions that guarantee specific (absolute or relative) levels of protection. See [Fleurbaey and Zambrano 2024](https://arxiv.org/abs/2408.04814) for details.
 
 
 
