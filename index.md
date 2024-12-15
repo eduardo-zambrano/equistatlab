@@ -10,7 +10,7 @@ This material is based upon work supported by the [National Science Foundation](
 The research program consist of three main research projects.[^a]
 
 ## Project 1: Protected income and inequality aversion
-The first component, written in collaboration with [Marc Fleurbaey](https://sites.google.com/site/marcfleurbaey/Home), involves developing a methodology for determining an evaluator's social preferences based on the tradeoffs between the well-being of different individuals that the evaluator considers acceptable. **This project is now complete, and it is available [at this link](https://osf.io/tnu2q/)**.
+The first component, written in collaboration with [Marc Fleurbaey](https://sites.google.com/site/marcfleurbaey/Home), involves developing a methodology for determining an evaluator's social preferences based on the tradeoffs between the well-being of different individuals that the evaluator considers acceptable. **The paper for this project is now complete, and it is available [at this link](https://osf.io/tnu2q/)**.
 
 ## Project 2: Social preferences under uncertainty and ambiguity
 The second component involves incorporating this social welfare information into a statistical estimation framework, using an egalitarian equivalent representation of the evaluator's preferences, a concept akin to the certainty equivalent representation in expected utility theory. 
