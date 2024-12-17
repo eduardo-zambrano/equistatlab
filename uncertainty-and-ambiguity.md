@@ -40,11 +40,11 @@ and
 
 $$ Y_1(b),...,Y_n(b), $$
 
-and where $Y_i(a)=f(y_i(a))$ and $Y_i(b)=f(y_i(b))$. One would then proceed in a "business as usual fashion", namely, as though the evaluator is inequality neutral with respect to the transformed variables $Y_i(a)$ and $Y_i(b)$.
+where $Y_i(a)=f(y_i(a))$ and $Y_i(b)=f(y_i(b))$. One would then proceed in a “business as usual fashion”, namely, as though the evaluator is inequality neutral with respect to the transformed variables $Y_i(a)$ and $Y_i(b)$.
 
-The main lesson behind our project [Social Preferences Under Uncertainty and Ambiguity](https://osf.io/25nme/) is that this is an adequate way to proceed only if the evaluator faces no uncertainty or ambiguity about what distribution of outcomes is associated with the treatments under consideration. If the evaluator faces uncertainty or ambiguity about the distribution of outcomes associated with the treatments, one should do something different, and the project [Social Preferences Under Uncertainty and Ambiguity](https://osf.io/25nme/) shows what that is, and why.
+The main lesson behind the present project is that this is an adequate way to proceed only if the evaluator faces no uncertainty or ambiguity about what distribution of outcomes is associated with the treatments under consideration. If the evaluator faces uncertainty or ambiguity about the distribution of outcomes associated with the treatments, one should do something different, and the present project aims to show what that is, and why.
 
-The technical details are [in the paper](https://osf.io/25nme/), and below I want to provide a couple of examples that illustrate the key problem the paper tries to solve, and how it solves it.
+The technical details are [in the paper](https://osf.io/25nme/) (the draft of which is currently in preparation), and below I want to provide a couple of examples that illustrate the key problem the paper tries to solve, and how it solves it.
 
 ## Illustration
 
@@ -62,7 +62,9 @@ Consider now a situation with three individuals, two states of the world, and tw
 
 Consider, in addition, an inequality averse evaluator with $f$ given by the logarithm function. This means that, given a prospect $y$, the evaluator computes, for each state $s$, the magnitude ${\frac{1}{3}}(\ln y_1^s + \ln y_2^s + \ln y_3^s)$. These computations are shown, for prospects $y(a)$ and $y(b)$, in the row labeled $\mathrm{E}[\mathrm{log} \, y]$ in the table below:
 
+@@im-150
 ![f is log](/assets/f.png)
+@@
 
 Assume further that the evaluator is a risk neutral Bayesian decision maker, with priors of $(\frac{2}{3},\frac{1}{3})$ on states 1 and 2 respectively. 
 
@@ -70,7 +72,9 @@ This evaluator prefers prospect $y(a)$ to prospect $y(b)$, since the expected va
 
 However, an equivalent representation of those social preferences *in any given state* is the [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of outcomes. Say we were to use this representation. This means that, given a prospect $y$, the evaluator would compute, for each state $s$, the magnitude  $(y_1^s y_2^s y_3^s)^{\frac{1}{3}}$, shown in the row labeled $\mathrm{GM}[y]$ in the table below, and the expected value of these geometric mean measures is then $3.95$ for prospect $y(a)$ and  $4.48$ for prospect $y(b)$, shown in the row labeled $\mathrm{E}\big[\mathrm{GM}[y]\big]$ in the table below. According to this, the evaluator prefers prospect $y(b)$ to prospect $y(a)$. 
 
+@@im-150
 ![ee representation](/assets/ee.png)
+@@
 
 We then have two representations of the evaluator's social preference over known outcome distributions. They are equivalent in the sense that they both correctly represent the social preference over known income distributions. However, once we add uncertainty and ambiguity about what outcome distribution arises with a given treatment, their recommendations as to which is the preferred treatment differ. The question is: which of these representations, if any, is giving the right answer? 
 
@@ -99,24 +103,28 @@ Under the assumptions of this theorem, the social evaluation can be done as the 
 
 This is significant because, as the example above shows, the choice of representation of the evaluator's preferences can be consequential in cases with statistical uncertainty: one would obtain different rankings over treatments depending on what representation one was using. 
 
-Let's return to the example now. Notice that prospect $y(b)$ is ranked above $y(a)$ in state 1 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: looking at the corresponding rows from the tables above, we obtain that $1.83 > 1.60$ and $6.21 > 4.93$. Notice also that prospect $y(a)$ is ranked above $y(b)$ in state 2 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: looking at the corresponding rows from the tables above, we obtain that $0.69 > 0$ and $2 > 1$. Therefore, both of these measures rank the prospects in the same way, on a state by state basis. However, we saw earlier that $y(a)$ ranks above $y(b)$ according to $\mathrm{E}\big[\mathrm{E}[\mathrm{log} \, y]\big]$, and  $y(b)$ ranks above $y(a)$ according to $\mathrm{E}\big[\mathrm{GM}[y]\big]$. Which representation one uses ends up making a difference for the analysis under uncertainty and ambiguity. Among these, we will prefer the measure based on $\mathrm{GM}[y]$ because that is the one that does not conflate risk aversion and inequality aversion. Let's take a closer look at this statement.
+Let's return to the example now. Notice that prospect $y(b)$ is ranked above $y(a)$ in state 1 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: looking at the corresponding rows from the tables above, we obtain that $1.83 > 1.60$ and $6.21 > 4.93$. Notice also that prospect $y(a)$ is ranked above $y(b)$ in state 2 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: looking at the corresponding rows from the tables above, we obtain that $0.69 > 0$ and $2 > 1$. Therefore, both of these measures rank the prospects in the same way, on a state by state basis. However, we saw earlier that, after aggregating across states, $y(a)$ ranks above $y(b)$ according to $\mathrm{E}\big[\mathrm{E}[\mathrm{log} \, y]\big]$, and  $y(b)$ ranks above $y(a)$ according to $\mathrm{E}\big[\mathrm{GM}[y]\big]$. Which representation one uses ends up making a difference for the analysis under uncertainty and ambiguity. Among these, we will prefer the measure based on $\mathrm{GM}[y]$ *because that is the one that does not conflate risk aversion and inequality aversion*.
 
 ## Inequality Aversion $\ne$ Risk Aversion
 
 When contemplating which representation of the social preferences under certainty to incorporate into one's statistical framework, it bears noticing that using the $\mathrm{E}[\mathrm{log} \, y]$ representation amounts to imputing a degree of risk aversion to the evaluation that the evaluator does not necessarily have. This can be seen most easily in the case of a risk neutral Bayesian evaluator in an evaluation where there is no inequality. In this case, using the $\mathrm{E}[\mathrm{log} \, y]$ representation amounts to applying a concave transformation of the data coming from the representative individual before taking expectations across states, and this would make the decision maker act as though they are risk averse, even if they are not. The $\mathrm{GM}[y]$ representation, on the other hand, makes no such imputation.
 
-Let's illustrate this finding through a variant of my previous example:
+Let's illustrate this finding through a variant of the previous example:
 
+@@im-150
 ![ee representatio, part 2](/assets/ee2.png)
+@@
 
+@@im-150
 ![f is log, part 2](/assets/f2.png)
+@@
 
- In this variant, there is no inequality but there is uncertainty. With this decision maker being risk neutral, the comparision between treatments then boils down to assessing which is better: $y(a)$, which yields $6$ with probability $\frac{2}{3}$ and $2$ with probability $\frac{1}{3}$ for the representative individual, with expected outcome $5.67$, versus $y(b)$, which yields $8$ with probability $\frac{2}{3}$ and $1$ with probability $\frac{1}{3}$ for the representative individual, with expected outcome $4.67$. The expected outcome is larger for $y(b)$, and therefore $y(b)$ would be the prospect chosen.
+ In this variant, there is no inequality but there is uncertainty. With this decision maker being risk neutral, the comparision between treatments then boils down to assessing which is better: $y(a)$, which yields $6$ with probability $\frac{2}{3}$ and $2$ with probability $\frac{1}{3}$ for the representative individual, with expected outcome $4.67$, versus $y(b)$, which yields $8$ with probability $\frac{2}{3}$ and $1$ with probability $\frac{1}{3}$ for the representative individual, with expected outcome $5.67$. The expected outcome is larger for $y(b)$, and therefore $y(b)$ would be the prospect chosen.
  
   This is not what happens when analizing the example under the $\mathrm{E}[\mathrm{log} \, y]$ representation of the social preferences under certainty: the evaluator would end up comparing $y(a)$, with expected log measure $1.43$, to $y(b)$, with expected log measure $1.39$, and conclude that $y(a)$ is better. This is the conclusion that one would reach if the evaluator was analizing the situation of a single representative individual and was risk averse, with Bernoulli utility function given by the logarithm function. Our evaluator in this example is not risk averse, however, yet the $\mathrm{E}[\mathrm{log} \, y]$ representation of the evaluator's social preferences under certainty is unwittingly making such imputation. One avoids this problem in this example by using the $\mathrm{GM}[y]$ representation instead, and the reason why this works is that $\mathrm{GM}[y]$ is in fact the way one computes the egalitarian equivalent of $y$ for an evaluator that has $f$  as the logarithm function in a social evaluation problem under certainty.
 
 ## Next Steps
- The [third project in this series](../treatment-assignment/) makes further use of the egalitarian equivalent approach in the context of an optimal treatment assignment problem, as in [Manski 2024](https://www.cambridge.org/core/journals/econometric-theory/article/identification-and-statistical-decision-theory/968454BD865C607D58DDB15F8FA179BF). I investigate egalitarian equivalent optimal statistical decisions for the Bayesian, maximin, and minimax regret evaluators. We will learn that when the true state is point identified, the subtlety discussed above about what representation of the social preferences under certainty one should bring into the statistical decision analysis does not arise, but the situation is different [under partial identification](https://en.wikipedia.org/wiki/Set_identification). In this case, the optimal treatment assignment varies with which representation of the social preferences under certainty one is using, and the point of the present paper has been to highlight that the egalitarian equivalent representation is the right representation to use, as long as one finds the assumptions behind Theorem 3.1 in [Social Preferences Under Uncertainty and Ambiguity](https://osf.io/25nme/) acceptable.
+ The [third project in this series](../treatment-assignment/) makes further use of the egalitarian equivalent approach in the context of an optimal treatment assignment problem, as in [Manski 2024](https://www.cambridge.org/core/journals/econometric-theory/article/identification-and-statistical-decision-theory/968454BD865C607D58DDB15F8FA179BF). I investigate egalitarian equivalent optimal statistical decisions for the Bayesian, maximin, and minimax regret evaluators. We will learn that when the true state is point identified, the subtlety discussed above about what representation of the social preferences under certainty one should bring into the statistical decision analysis does not arise, but the situation is different [under partial identification](https://en.wikipedia.org/wiki/Set_identification). In this case, the optimal treatment assignment varies with which representation of the social preferences under certainty one is using, and the point of the present paper has been to highlight that the egalitarian equivalent representation is the representation that one should incorporate into a statisitical framwework, as long as one finds the assumptions behind Theorem 3.1 in [Social Preferences Under Uncertainty and Ambiguity](https://osf.io/25nme/) acceptable.
 
 ## Endnotes
 
@@ -126,10 +134,4 @@ Let's illustrate this finding through a variant of my previous example:
 
 [^3]: Under standard continuity, dominance, and Pareto conditions.
 
-
-<!-- ~~~
-<iframe src="https://eduardo-zambrano.github.io/ocob_seminars/" width="100%" height="1500px" style="border:none;">
-    This feature requires inline frames. You have iframes disabled or your browser does not support them.
-</iframe>
-~~~ -->
 ---
