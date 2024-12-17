@@ -8,8 +8,8 @@ tags = ["syntax", "code"]
 +++
 
 
-# Protected Income and Inequality Aversion
-The material below is based on the project [Protected Income and Inequality Aversion](https://osf.io/tnu2q/), by [Marc Fleurbaey](https://sites.google.com/site/marcfleurbaey/Home) and [Eduardo Zambrano](https://eduardo-zambrano.github.io/).
+# Project 1: Protected Income and Inequality Aversion
+The material below is based on the paper [Protected Income and Inequality Aversion](https://osf.io/tnu2q/), by [Marc Fleurbaey](https://sites.google.com/site/marcfleurbaey/Home) and [Eduardo Zambrano](https://eduardo-zambrano.github.io/).
 
 ## Introduction
 When evaluators contemplate a policy reform, they must think about the differential effects those policies may have on different individuals. Below we contemplate the evaluation of policy reforms relative to a *status quo*. If a policy reform generates only winners and no losers relative to the status quo, an evaluator may be strongly inclined to favor the reform. Unfortunately, most policy reforms generate both winners and losers, and an evaluator must then determine how to trade off any income gains and losses that the reform generates. In our research, we consider several ways in which those gains and losses may be assessed and compared. 

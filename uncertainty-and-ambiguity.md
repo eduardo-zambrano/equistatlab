@@ -8,7 +8,7 @@ rss_pubdate = Date(2019, 5, 1)
 tags = ["syntax", "code", "image"]
 +++
 
-# Social Preferences Under Uncertainty and Ambiguity
+# Project 2: Social Preferences Under Uncertainty and Ambiguity
 
 ## Introduction
 
