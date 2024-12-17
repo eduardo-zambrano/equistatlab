@@ -62,9 +62,7 @@ Consider now a situation with three individuals, two states of the world, and tw
 
 Consider, in addition, an inequality averse evaluator with $f$ given by the logarithm function. This means that, given a prospect $y$, the evaluator computes, for each state $s$, the magnitude ${\frac{1}{3}}(\ln y_1^s + \ln y_2^s + \ln y_3^s)$. These computations are shown, for prospects $y(a)$ and $y(b)$, in the row labeled $\mathrm{E}[\mathrm{log} \, y]$ in the table below:
 
-@@im-150
 ![f is log](/assets/f.png)
-@@
 
 Assume further that the evaluator is a risk neutral Bayesian decision maker, with priors of $(\frac{2}{3},\frac{1}{3})$ on states 1 and 2 respectively. 
 
@@ -72,9 +70,7 @@ This evaluator prefers prospect $y(a)$ to prospect $y(b)$, since the expected va
 
 However, an equivalent representation of those social preferences *in any given state* is the [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of outcomes. Say we were to use this representation. This means that, given a prospect $y$, the evaluator would compute, for each state $s$, the magnitude  $(y_1^s y_2^s y_3^s)^{\frac{1}{3}}$, shown in the row labeled $\mathrm{GM}[y]$ in the table below, and the expected value of these geometric mean measures is then $3.95$ for prospect $y(a)$ and  $4.48$ for prospect $y(b)$, shown in the row labeled $\mathrm{E}\big[\mathrm{GM}[y]\big]$ in the table below. According to this, the evaluator prefers prospect $y(b)$ to prospect $y(a)$. 
 
-@@im-150
 ![ee representation](/assets/ee.png)
-@@
 
 We then have two representations of the evaluator's social preference over known outcome distributions. They are equivalent in the sense that they both correctly represent the social preference over known income distributions. However, once we add uncertainty and ambiguity about what outcome distribution arises with a given treatment, their recommendations as to which is the preferred treatment differ. The question is: which of these representations, if any, is giving the right answer? 
 
@@ -111,13 +107,9 @@ When contemplating which representation of the social preferences under certaint
 
 Let's illustrate this finding through a variant of the previous example:
 
-@@im-150
 ![ee representatio, part 2](/assets/ee2.png)
-@@
 
-@@im-150
 ![f is log, part 2](/assets/f2.png)
-@@
 
  In this variant, there is no inequality but there is uncertainty. With this decision maker being risk neutral, the comparision between treatments then boils down to assessing which is better: $y(a)$, which yields $6$ with probability $\frac{2}{3}$ and $2$ with probability $\frac{1}{3}$ for the representative individual, with expected outcome $4.67$, versus $y(b)$, which yields $8$ with probability $\frac{2}{3}$ and $1$ with probability $\frac{1}{3}$ for the representative individual, with expected outcome $5.67$. The expected outcome is larger for $y(b)$, and therefore $y(b)$ would be the prospect chosen.
  
