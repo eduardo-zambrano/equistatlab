@@ -5,10 +5,6 @@ rss = "The egalitarian equivalent, ee, of a societal distribution of outcomes wi
 
 # Project 3: Inequality Sensitive Optimal Treatment Assignment
 
-The material below is based on the paper [Inequality Sensitive Optimal Treatment Assignment](https://osf.io/wv5jt), by [Eduardo Zambrano](https://eduardo-zambrano.github.io/).
-
-## Introduction
-
-Coming soon...
+The material below is based on the paper [Inequality Sensitive Optimal Treatment Assignment](https://osf.io/wv5jt), by [Eduardo Zambrano](https://eduardo-zambrano.github.io/). The paper [is ready](https://osf.io/wv5jt), and the accompanying informal narrative is currently being prepared.
 
 ---
