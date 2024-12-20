@@ -60,7 +60,11 @@ Consider now a situation with three individuals, two states of the world, and tw
   10 & 1
 \end{smallmatrix}\right]$, where rows correspond to individuals and columns corresponds to states.
 
-Consider, in addition, an inequality averse evaluator with $f$ given by the logarithm function. This means that, given a prospect $y$, the evaluator computes, for each state $s$, the magnitude ${\frac{1}{3}}(\ln y_1^s + \ln y_2^s + \ln y_3^s)$. These computations are shown, for prospects $y(a)$ and $y(b)$, in the row labeled $\mathrm{E}[\mathrm{log} \, y]$ in the table below:
+To provide additional context to the example, you may imagine that treatment $b$, if it works well (which happens in state 1), it generates a distribution of outcomes with a large mean and a large spread (of 3, 8 and 10), whereas if it does not work well (which happens in state 2), it generates a distribution of outcomes with no spread and very low outcome values (of 1 for each individual). In turn, if treatment $a$ works well, it generates a distribution of outcomes with moderate mean and low spread (of 4, 5 and 6), whereas if it does not work well (which happens in state 2), it generates moderately low and equal outcomes (of 2 for each individual). One can think of treatment $b$ as one that either works very well for almost everybody or not at all, and treatment $a$ is a less extreme version of the same kind of policy. 
+
+Consider, in addition, an inequality averse evaluator with $f$ given by the logarithm function. This means that, given a prospect $y$, the evaluator computes, for each state $s$, the magnitude ${\frac{1}{3}}(\ln y_1^s + \ln y_2^s + \ln y_3^s)$. 
+
+These computations are shown, for prospects $y(a)$ and $y(b)$, in the row labeled $\mathrm{E}[\mathrm{log} \, y]$ in the table below:
 
 ![f is log](/assets/f.png)
 
