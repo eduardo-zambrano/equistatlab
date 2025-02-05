@@ -68,7 +68,7 @@ These computations are shown, for prospects $y(a)$ and $y(b)$, in the row labele
 
 ![f is log](/assets/f.png)
 
-Assume further that the evaluator is a risk neutral Bayesian decision maker, with priors of $(\frac{2}{3},\frac{1}{3})$ on states 1 and 2 respectively. 
+Assume further that the evaluator is a risk-neutral decision maker, with priors of $(\frac{2}{3},\frac{1}{3})$ on states 1 and 2 respectively. 
 
 This evaluator prefers prospect $y(a)$ to prospect $y(b)$, since the expected value of these log measures is $1.29$ for Prospect $y(a)$ and $1.22$ for Prospect $y(b)$, as seen in the row labeled $\mathrm{E}\big[\mathrm{E}[\mathrm{log} \, y]\big]$ in the table above.
 
@@ -86,7 +86,7 @@ In order to properly investigate this question, we need to introduce an addition
  
 $$ \mathcal{EE}(y_1,...,y_n):=f^{-1}\left(\frac{f(y_1)+...+f(y_n)}{n}\right). $$ 
 
-For an inequality averse evaluator, it is well-knwon that
+For an inequality averse evaluator the following is true:
 
 $$ \mathcal{EE}(y_1,...,y_n) < \frac{y_1+...+y_n}{n}. $$
 
@@ -101,13 +101,11 @@ Theorem 3.1 in [Social Preferences Under Uncertainty and Ambiguity](https://osf.
 
 Under the assumptions of this theorem, the social evaluation can be done as the single-person evaluation, but one applies the single-person decision methodology under uncertainty or ambiguity to the profile of egalitarian equivalent measures $(\mathcal{EE}(y^1),...,\mathcal{EE}(y^m))$. Therefore, given a social preference about known outcome distributions in society, one incorporates those into a treatment evaluation framework under uncertainty and ambiguity, given a set of states of the world, by first aggregating across individuals for each state, using the egalitarian equivalent representation of the social preferences under certainty, and then aggregating across states in whichever way the evaluator normally does so in single-person decision problems under uncertainty or ambiguity.
 
-This is significant because, as the example above shows, the choice of representation of the evaluator's preferences can be consequential in cases with statistical uncertainty: one would obtain different rankings over treatments depending on what representation one was using. 
-
-Let's return to the example now. Notice that prospect $y(b)$ is ranked above $y(a)$ in state 1 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: looking at the corresponding rows from the tables above, we obtain that $1.83 > 1.60$ and $6.21 > 4.93$. Notice also that prospect $y(a)$ is ranked above $y(b)$ in state 2 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: looking at the corresponding rows from the tables above, we obtain that $0.69 > 0$ and $2 > 1$. Therefore, both of these measures rank the prospects in the same way, on a state by state basis. However, we saw earlier that, after aggregating across states, $y(a)$ ranks above $y(b)$ according to $\mathrm{E}\big[\mathrm{E}[\mathrm{log} \, y]\big]$, and  $y(b)$ ranks above $y(a)$ according to $\mathrm{E}\big[\mathrm{GM}[y]\big]$. Which representation one uses ends up making a difference for the analysis under uncertainty and ambiguity. Among these, we will prefer the measure based on $\mathrm{GM}[y]$ *because that is the one that does not conflate risk aversion and inequality aversion*.
+This is significant because, as the example above shows, the choice of representation of the evaluator's preferences can be consequential in cases with statistical uncertainty: one would obtain different rankings over treatments depending on what representation one was using. After aggregating across states, $y(a)$ ranks above $y(b)$ according to $\mathrm{E}\big[\mathrm{E}[\mathrm{log} \, y]\big]$, and  $y(b)$ ranks above $y(a)$ according to $\mathrm{E}\big[\mathrm{GM}[y]\big]$. Which representation one uses ends up making a difference for the analysis under uncertainty and ambiguity. Among these, we will prefer the measure based on $\mathrm{GM}[y]$ *because that is the one that does not conflate risk aversion and inequality aversion*.
 
 ## Inequality Aversion $\ne$ Risk Aversion
 
-When contemplating which representation of the social preferences under certainty to incorporate into one's statistical framework, it bears noticing that using the $\mathrm{E}[\mathrm{log} \, y]$ representation amounts to imputing a degree of risk aversion to the evaluation that the evaluator does not necessarily have. This can be seen most easily in the case of a risk neutral Bayesian evaluator in an evaluation where there is no inequality. In this case, using the $\mathrm{E}[\mathrm{log} \, y]$ representation amounts to applying a concave transformation of the data coming from the representative individual before taking expectations across states, and this would make the decision maker act as though they are risk averse, even if they are not. The $\mathrm{GM}[y]$ representation, on the other hand, makes no such imputation.
+When contemplating which representation of the social preferences under certainty to incorporate into one's statistical framework, it bears noticing that using the $\mathrm{E}[\mathrm{log} \, y]$ representation amounts to imputing a degree of risk aversion to the evaluation that the evaluator does not necessarily have. This can be seen most easily in the case of a risk-neutral evaluator in an evaluation where there is no inequality. In this case, using the $\mathrm{E}[\mathrm{log} \, y]$ representation amounts to applying a concave transformation of the data coming from the representative individual before taking expectations across states, and this would make the decision maker act as though they are risk averse, even if they are not. The $\mathrm{GM}[y]$ representation, on the other hand, makes no such imputation.
 
 Let's illustrate this finding through a variant of the previous example:
 

@@ -14,7 +14,7 @@ The material below is based on the paper [Protected Income and Inequality Aversi
 ## Introduction
 When evaluators contemplate a policy reform, they must think about the differential effects those policies may have on different individuals. Below we contemplate the evaluation of policy reforms relative to a *status quo*. If a policy reform generates only winners and no losers relative to the status quo, an evaluator may be strongly inclined to favor the reform. Unfortunately, most policy reforms generate both winners and losers, and an evaluator must then determine how to trade off any income gains and losses that the reform generates. In our research, we consider several ways in which those gains and losses may be assessed and compared. 
 
-Here, income is used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income (usually called “equivalent income”) as the relevant index instead of ordinary income.
+Here, income is used as the index of individual well-being, but the analysis is relevant to any setting in which individual well-being is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income (usually called “equivalent income”) as the relevant index instead of ordinary income.
 
 For illustrative purposes, we consider below situations where a reform affects only two individuals, starting from a position where they have the same income, and leaves the rest of the individuals in society unaffected. 
 
@@ -47,7 +47,7 @@ An evaluator with *CDPI* preferences, however, would be willing to sacrifice the
 This essentially says that the *CDPI* social preferences do not embed enough inequality aversion, especially for the poorest individuals in society. It would be desirable for the maximal acceptable loss to be smaller, the smaller the income of the individual is to begin with. To social preferences with that property we turn our attention to below.
 
 ## Constant Relative Protected Income Evaluations
-An evaluator with social preferences characterized by *constant relative protected income* (*CDPI*) would reject policies that, when compared to a status quo of equality, entail one of the individuals losing more than a certain fraction of income, $l$, with $l$ being constant for all income levels, $y$, in the status quo.
+An evaluator with social preferences characterized by *constant relative protected income* (*CRPI*) would reject policies that, when compared to a status quo of equality, entail one of the individuals losing more than a certain fraction of income, $l$, with $l$ being constant for all income levels, $y$, in the status quo.
 
 Figure 3 below illustrates. The black dot denotes the status quo and the blue line depicts the combinations of income for both individuals that leave the evaluator indifferent. Notice that the blue line does not hits the axes of the graph, meaning that if a policy generates a loss larger than $l \cdot y$ for one of the individuals, the evaluator will reject the policy no matter how large the gain is for the other individual. The blue dashed lines show that, as the income of one of the individuals grows without bound, the income for the other individual stays above $l \cdot y$. In the figure, the length of the purple horizontal segment denotes the maximal acceptable loss, $l \cdot y$.
 
@@ -61,9 +61,9 @@ To understand these social preferences at some more depth, the reader may want t
 ~~~
 
 ## Technical
-It is important to be very deliberate about what is it that is being compared across individuals. In the preceeding sections income was used as the index of individual advantage, but the analysis is relevant to any setting in which individual advantage is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income, usually called [“equivalent income”](https://academic.oup.com/book/37245/chapter/330083193) or “money-metric utility,” as the relevant index instead of ordinary income. Below we adopt this point of view and consider evaluators with preferences over profiles of equivalent incomes.
+It is important to be very deliberate about what is it that is being compared across individuals. In the preceeding sections income was used as the index of individual well-being, but the analysis is relevant to any setting in which individual well-being is measured by a cardinally measurable and interpersonally comparable index. In particular, it is possible to adjust income for non-market aspects of quality of life that individuals enjoy or endure, and use this ajusted income, usually called [“equivalent income”](https://academic.oup.com/book/37245/chapter/330083193) or “money-metric utility,” as the relevant index instead of ordinary income. Below we adopt this point of view and consider evaluators with preferences over profiles of equivalent incomes.
 
-All the evaluators we consider rank equivalent income profiles according to social preferences that admit an additively separable [Social Welfare](https://en.wikipedia.org/wiki/Social_welfare_function) representation. The *social welfare* of the equivalent income profile $(y_1,...,y_n)$ in a society with $n$ individuals is given by $W(y_1,...,y_n)=f(y_1)+...+f(y_n)$ for some continuous and strictly increasing function $f$, called the *generator* of $W$. 
+All the evaluators we consider rank equivalent income profiles according to social preferences that admit an additively separable [Social Welfare](https://en.wikipedia.org/wiki/Social_welfare_function) representation, that is, the *social welfare* of the equivalent income profile $(y_1,...,y_n)$ in a society with $n$ individuals is given by $W(y_1,...,y_n)=f(y_1)+...+f(y_n)$ for some continuous and strictly increasing function $f$, called the *generator* of $W$. 
 
 The choice of generator determines the kind of evaluator we are facing. In particular:
 
@@ -75,13 +75,18 @@ The choice of generator determines the kind of evaluator we are facing. In parti
 
 - The *CRPI* evaluator is the prioritarian evaluator associated with the  generator $f(y)= - y^{\frac{1}{\log_2 (k)}}$  for $k\in(0,1)$.
 
-These last two are interpretable representations of (1) the Kolm-Pollak social preferences and (2) a subclass of the Kolm-Atkinson prioritarian social preferences, respectively. 
+These last two are interpretable representations of (1) the translation invariant [^1] social preferences and (2) a subclass of the homogeneous[^2] social preferences, respectively. 
 
-We mentioned above that none of the Kolm-Pollak evaluators would offer income protection to individuals whose income was less than $L$. Past that income level, they protect a fraction of income given by $1 - \frac{L}{y}$. Notice that this fraction is smaller, the smaller the income level, $y$, in the status quo. On the other hand, the Kolm-Atkinson evaluators considered above protect a constant fraction of income, $k$.
+We mentioned above that none of the translation invariant evaluators would offer income protection to individuals whose income was less than $L$. Past that income level, they protect a fraction of income given by $1 - \frac{L}{y}$. Notice that this fraction is smaller, the smaller the income level, $y$, in the status quo. On the other hand, the homogeneous evaluators considered above protect a constant fraction of income, $k$.
 
 Motivated by these findings, we propose a class of social preferences
-that, starting from a baseline level of protection, protect a higher fraction of the sacrificed individual's income the lower their income. In addition to relating levels of protected income to coefficients of inequality, we also characterize the classes of additively separable social welfare functions that guarantee specific (absolute or relative) levels of protection. See [Fleurbaey and Zambrano 2024](https://arxiv.org/abs/2408.04814) for details.
+that, starting from a guaranteed income, protect a higher fraction of the sacrificed individual's income the lower their income. In addition to relating levels of protected income to coefficients of inequality, we also characterize the classes of additively separable social welfare functions that guarantee specific (absolute or relative) levels of protection. See [Fleurbaey and Zambrano 2024](https://arxiv.org/abs/2408.04814) for details.
 
+## Endnotes
+
+[^1]: Also known as the *Kolm-Pollak* social preferences in Welfare Economics. 
+
+[^2]: Also known as the *Kolm-Atkinson* social preferences in Welfare Economics.
 
 
 
