@@ -84,9 +84,9 @@ that, starting from a guaranteed income, protect a higher fraction of the sacrif
 
 ## Endnotes
 
-[^1]: Also known as the *Kolm-Pollak* social preferences in Welfare Economics. 
+[^1]: Known as [the *Kolm-Pollak*](https://www.jstor.org/stable/2527392?seq=1) social preferences. 
 
-[^2]: Also known as the *Kolm-Atkinson* social preferences in Welfare Economics.
+[^2]: Known as [the *Kolm-Atkinson*](https://en.wikipedia.org/wiki/Atkinson_index) social preferences.
 
 
 
