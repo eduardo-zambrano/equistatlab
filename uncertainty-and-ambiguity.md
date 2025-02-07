@@ -42,7 +42,7 @@ $$ Y_1(b),...,Y_n(b), $$
 
 where $Y_i(a)=f(y_i(a))$ and $Y_i(b)=f(y_i(b))$. One would then proceed in a “business as usual fashion”, namely, as though the evaluator is inequality neutral with respect to the transformed variables $Y_i(a)$ and $Y_i(b)$.
 
-The main lesson behind the present project is that this is an adequate way to proceed only if the evaluator faces no uncertainty or ambiguity about what distribution of outcomes is associated with the treatments under consideration. If the evaluator faces uncertainty or ambiguity about the distribution of outcomes associated with the treatments, one should do something different, and the present project aims to show what that is, and why.
+The key lesson of this project is that the proposed approach is suitable only when the evaluator faces no uncertainty or ambiguity about the distribution of outcomes associated with the treatments under consideration. However, when such uncertainty or ambiguity exists, a different approach is necessary to prevent the conflation of risk aversion and inequality aversion. This project seeks to identify and articulate the appropriate method for representing the evaluator's preferences over known outcome distributions, preserving the conceptual and analytical distinction between inequality aversion and risk aversion when uncertainty and ambiguity are present.
 
 The technical details are [in the paper](https://osf.io/25nme/) (the draft of which is currently in preparation), and below I want to provide a couple of examples that illustrate the key problem the paper tries to solve, and how it solves it.
 
