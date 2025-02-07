@@ -66,11 +66,9 @@ Consider, in addition, an inequality averse evaluator with $f$ given by the loga
 
 These computations are shown, for prospects $y(a)$ and $y(b)$, in the row labeled $\mathrm{E}[\mathrm{log} \, y]$ in the table below:
 
-![f is log](/assets/f.png)
-
 Assume further that the evaluator is a risk-neutral decision maker, with priors of $(\frac{2}{3},\frac{1}{3})$ on states 1 and 2 respectively. 
 
-This evaluator prefers prospect $y(a)$ to prospect $y(b)$, since the expected value of these log measures is $1.29$ for Prospect $y(a)$ and $1.22$ for Prospect $y(b)$, as seen in the row labeled $\mathrm{E}\big[\mathrm{E}[\mathrm{log} \, y]\big]$ in the table above.
+This evaluator prefers prospect $y(a)$ to prospect $y(b)$, since the expected value of these (average) log measures is $1.29$ for Prospect $y(a)$ and $1.22$ for Prospect $y(b)$, as seen in the row labeled $\mathrm{E}\big[\mathrm{E}[\mathrm{log} \, y]\big]$ in the table above.
 
 However, an equivalent representation of those social preferences *in any given state* is the [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of outcomes. Say we were to use this representation. This means that, given a prospect $y$, the evaluator would compute, for each state $s$, the magnitude  $(y_1^s y_2^s y_3^s)^{\frac{1}{3}}$, shown in the row labeled $\mathrm{GM}[y]$ in the table below, and the expected value of these geometric mean measures is then $3.95$ for prospect $y(a)$ and  $4.48$ for prospect $y(b)$, shown in the row labeled $\mathrm{E}\big[\mathrm{GM}[y]\big]$ in the table below. According to this, the evaluator prefers prospect $y(b)$ to prospect $y(a)$. 
 

@@ -1,0 +1,50 @@
+/* Collapsible button */
+.collapsible {
+	background-color: #eaf5ff;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: 1px solid #d1d5db; /* Unified border */
+	border-bottom: none; /* Remove bottom border to blend with content */
+	border-left: 4px solid #3498db; /* Blue left border */
+	border-radius: 4px 4px 0 0; /* Rounded corners for top */
+	text-align: left;
+	outline: none;
+	font-size: inherit;
+	font-weight: bold;
+}
+
+/* Add bottom border only if the button is not active */
+.collapsible:not(.active) {
+	border-bottom: 1px solid #d1d5db; /* Ensures bottom border when collapsed */
+	border-radius: 4px 4px 4px 4px; /* Rounded corners for top */
+}
+
+/* Add hover and active effects */
+.active, .collapsible:hover {
+	background-color: #eaf5ff;
+}
+
+/* Add an icon before the collapsible button text */
+.collapsible:before {
+	content: '\2300'; /* Unicode for note icon (ⓘ) */
+	font-size: 18px;
+	margin-right: 10px;
+	color: #3498db; /* Blue color for the icon */
+}
+
+/* Collapsible content */
+.collapsiblecontent {
+	display: none; /* Hidden by default */
+	padding: 0.5em 10px;
+	border: 1px solid #d1d5db; /* Match the button's border */
+	border-left: 4px solid #3498db; /* Match left border */
+	border-radius: 0 0 4px 4px; /* Rounded corners for bottom */
+	border-top: none; /* Remove top border to merge with button */
+}
+
+/* Show content when expanded */
+.collapsiblecontent.show {
+	display: block; /* Make content visible */
+}
