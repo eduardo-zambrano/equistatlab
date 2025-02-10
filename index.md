@@ -19,7 +19,7 @@ The [second component](../uncertainty-and-ambiguity/) involves incorporating thi
 The [third component](../treatment-assignment/) involves applying this framework to the analysis of optimal treatment rules in randomized controlled trials, using Bayesian, maximin, and minimax regret criteria, and testing the developed methodologies on several well-known trials that exhibit considerable treatment effect heterogeneity. Interventions that exhibit treatment effect heterogeneity can be difficult to evaluate and summarize in terms of welfare. The methods developed in this project provide specific, quantitative guidance for how to do this evaluation. **The paper from this project is now complete, and it is available [at this link](https://osf.io/wv5jt/)**.
 
 ## Stay tuned
-Through this website we plan to share code that will assist the interested reader with the following tasks: (i) conducting simulations to assess the effectiveness of the statistical and econometric tools we create, (ii) estimating egalitarian equivalent treatment effects and determining optimal treatment rules using both experimental and observational data, and (iii) visualizing the core theoretical results achieved throughout our research.
+The plan for website is for us to share code and examples that will assist the interested reader with the following tasks: (i) conducting simulations to assess the effectiveness of the statistical and econometric tools we create, (ii) estimating egalitarian equivalent treatment effects and determining optimal treatment rules using both experimental and observational data, and (iii) visualizing the core theoretical results achieved throughout our research.
 
 
 ### Disclaimer
