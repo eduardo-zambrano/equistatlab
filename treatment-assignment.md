@@ -28,17 +28,19 @@ Below, I offer an informal discussion of the key points covered in this project.
 
 ## Statistical Decision Theory
 
-The optimal treatment choice apparatus described in [Manski 2024](https://www.cambridge.org/core/journals/econometric-theory/article/identification-and-statistical-decision-theory/968454BD865C607D58DDB15F8FA179BF) is based on statistical decision theory, let's first describe what  this theory aims to do and how it differs from the traditional treatment evaluation methodology based on hypothesis testing.
+The optimal treatment choice apparatus described in [Manski 2024](https://www.cambridge.org/core/journals/econometric-theory/article/identification-and-statistical-decision-theory/968454BD865C607D58DDB15F8FA179BF) is based on statistical decision theory. Let's first describe what  this theory aims to do and how it differs from the standard treatment evaluation methodology based on hypothesis testing.
 
-Traditional methods for optimal treatment assignment differ in focus. Hypothesis testing estimates treatment effects and assesses whether the precision justifies a choice, emphasizing statistical significance. Statistical decision theory, instead, prioritizes decision quality, asking, “How good is this decision in terms of outcomes?” rather than, “How precise is the estimate?” This approach aligns treatment assignment with desired outcomes, even when precise estimation is difficult or secondary.
+Traditional methods for optimal treatment assignment differ in focus. Hypothesis testing estimates treatment effects and assesses whether the precision of the estimate justifies a treatment choice, emphasizing statistical significance. Statistical decision theory, instead, prioritizes decision quality, asking, “How good is this decision in terms of outcomes?” rather than, “How precise is the estimate?” This approach aligns treatment assignment with desired outcomes, even when precise estimation is difficult, impossible, or of or secondary importance.
 
 There are several variants of statistical decision theory, and in this project we work with three of them: Bayesian, maximin, and minimax regret. Each of these three variants first begins by identifying a function that maps incomes to welfare (the evaluator's objective function), and then representing uncertainty about the effect of treatments on outcomes using a set of states of the world. What differs between the approaches is how this welfare is evaluated, compared and aggregated across states.
 
-\collaps{Press here for a primer on how these statistical decision theories work.}{According to Bayesian statistical decision theory, the evaluator selects the treatment that leads to the highest expected welfare, where the expectation is taken with respect to a probability measure (called the prior) over the set of states. 
+\collaps{Press here for a primer on how these statistical decision theories work.}{Below I very briefly summarize at a high level what these different decision theories do and how they differ.
 
-The maximin evaluator avoids the specification of priors and defines the *security welfare* of a treatment rule to be given by the worst welfare across states that the rule could produce. The evaluator then selects the rule with the greatest security welfare. 
+* The **Bayesian** evaluator selects the treatment that leads to the highest expected welfare, where the expectation is taken with respect to a probability measure (called the prior) over the set of states. 
 
-The minimax regret evaluator also avoids the specification of priors and defines the *regret* of a treatment rule at a state to be the difference between the welfare achieved by the best treatment given knowledge of the state and the welfare achieved by the treatment rule at the state. The *worst regret* of a treatment rule is the largest regret the treatment rule achieves across states. The evaluator then selects the rule with the smallest worst regret.
+* The **maximin** evaluator avoids the specification of priors and defines the *security welfare* of a treatment rule to be given by the worst welfare across states that the rule could produce. The evaluator then selects the rule with the greatest security welfare. 
+
+* The **minimax regret** evaluator also avoids the specification of priors and defines the *regret* of a treatment rule at a state to be the difference between the welfare achieved by the best treatment given knowledge of the state and the welfare achieved by the treatment rule at the state. The *worst regret* of a treatment rule is the largest regret the treatment rule achieves across states. The evaluator then selects the rule with the smallest worst regret.
 
 Let's illustrate how these decision theories work with a variant on the main example in [Social Preferences Under Uncertainty and Ambiguity](../uncertainty-and-ambiguity/#illustration).
 
@@ -48,11 +50,11 @@ Our example is depicted in the table below:
 
 ![example](/assets/practice.png)
 
-The interpretation is as follows: treatment $a$ yields outcome $4.93$ in state 1 and $2$ in state 2, whereas treatment $b$ yields outcome $6.21$ in state 1 and $1$ in state 2.
+The interpretation is as follows: treatment $a$ yields outcome $4.93$ in state 1 and $2$ in state 2, whereas treatment $b$ yields outcome $6.21$ in state 1 and $1$ in state 2. Those numbers may be a kind of summary of how different individuals fare in each state, but that need not concern us here. Let's for now take these numbers as given.
 
 A treatment rule assigns individuals to treatments and in the example I focus on treatment rules that assign all individuals to the same treatment.
 
-Let's first investigate how a **Bayesian** evaluator would choose among treatments. In addition to the state space described above, the Bayesian evaluator would assign probabilities to the states. Assume that our evaluator assigns probability $\frac{2}{3}$ to state $1$ and probability  $\frac{1}{3}$ to state $2$. Then the expected outcome would be $3.95$ for treatment $a$ and $4.48$ for treatment $b$. On the basis of these expected outcomes, the Bayesian evaluator would use a treatment rule that assign everyone to treatment $b$.
+Let's first investigate how a **Bayesian** evaluator would choose among treatments. In addition to the state space described above, the Bayesian evaluator would assign probabilities to the states. Assume that our evaluator assigns probability $\frac{2}{3}$ to state $1$ and probability  $\frac{1}{3}$ to state $2$. Then the expected outcome would be $\frac{2}{3} 4.93 + \frac{1}{3} 2 = 3.95$ for treatment $a$ and $\frac{2}{3} 6.2 + \frac{1}{3} 1 = 4.48$ for treatment $b$. On the basis of these expected outcomes, the Bayesian evaluator would use a treatment rule that assign everyone to treatment $b$.
 
 Now let's investigate how a **maximin** evaluator would choose among treatments. The security welfare of the treatment rule that assigns everyone to treatment $a$ is $2$, whereas the security welfare of the treatment rule that assigns everyone to treatment $b$ is $1$. Therefore, the maximin evaluator would use a treatment rule that assign everyone to treatment $a$.
 
@@ -60,29 +62,27 @@ Finally, consider how a **minimax regret** evaluator would choose among treatmen
 
 }
 
-
-
 ## Incorporating Inequality Aversion
 
 In [Social Preferences under Uncertainty and Ambiguity](../uncertainty-and-ambiguity/) I used an [example](../uncertainty-and-ambiguity/#illustration) involving three individuals and two states of the world to make the case that, in a situation involving uncertainty, the decision of a Bayesian decision maker would vary depending on what representation of their social preferenes under certainty one brings into the decision analysis and and if you haven't read it yet [I recommend that you do so at this point](../uncertainty-and-ambiguity/).
 
 I will use the same example here to make the four main conceptual points of the present project, as shown below:
 
-When the presence of sufficient data allows the evaluator to know the true state of the world (the *point identification* case),  the optimal treatment assignment problem: 
+> When the presence of sufficient data allows the evaluator to know the true state of the world (the *point identification* case),  the optimal treatment assignment problem: 
+>
+> 1. Has the same answer for all the statistical decision theories we're considering (Bayesian, maximin, minimax regret).
+>
+> 2. Has the same answer regardless of what representation of the social preferences under certainty the evaluator is using.
 
-1. Has the same answer for all the statistical decision theories we're considering (Bayesian, maximin, minimax regret).
-
-2. Has the same answer regardless of what representation of the social preferences under certainty the evaluator is using.
-
-When the presence of even very large amounts of data does not allows the evaluator to know the true state of the world (the *partial identification* case), the optimal treatment assignment problem: 
-
-3. Generally varies depending on which statistical decision theory we will be considering.
-
-4. Generally varies depending on which representation of the social preferences under certainty one brings into the analysis under uncertainty and ambiguity.
+> When the presence of even very large amounts of data does not allows the evaluator to know the true state of the world (the *partial identification* case), the optimal treatment assignment problem: 
+>
+> 3. Generally varies depending on which statistical decision theory we will be considering.
+>
+> 4. Generally varies depending on which representation of the social preferences under certainty one brings into the analysis under uncertainty and ambiguity.
 
 Points 1 and 3 above have been made by [Manski 2024](https://www.cambridge.org/core/journals/econometric-theory/article/identification-and-statistical-decision-theory/968454BD865C607D58DDB15F8FA179BF). Points 2 and 4 are novel.
 
-Let's take a look at the example again and see how it can help us make the points above.
+Let's take a look at the example again and see how it can help us illustrate and make the points above.
 
 ### The Illustration
 Recall that prospect $y(a)$ collects the possible outcome distributions induced by treatment $a$ across all states of the world. Similarly for treatment $b$ and associated prospect $y(b)$.
@@ -108,18 +108,9 @@ These computations are shown, for prospects $y(a)$ and $y(b)$, in the row labele
 </div>
 ~~~
 
-As we discussed in  [Social Preferences Under Uncertainty and Ambiguity](../uncertainty-and-ambiguity/#illustration), the egalitarian equivalent representation of these social preferences is given by the [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of outcomes, shown in the row labeled $\mathrm{GM}[y]$ in Table 2 below:
+Now let's consider in some detail how the illustration helps us make the main conceptual points of the paper.
 
-~~~
-<div style="text-align: center;">
-  <img src="/assets/ee3.png" alt="ee representation">
-  <p><strong>Table 2</strong></p>
-</div>
-~~~
-
-Now let's consider in some detail how the example helps us make the main conceptual points of the paper.
-
-\collaps{Press here to see how all three decision theories arrive at the same optimal treatment rule under point identification.}{First, notice that treatment $b$ is ranked above treatment $a$ in state 1. One can see this by looking at the $\mathrm{E}[\mathrm{log} \, y]$ row in Table 1, since $1.83 > 1.60$. Next, notice that treatment $a$ is ranked above treatment $b$ in state 2: looking at the $\mathrm{E}[\mathrm{log} \, y]$  row in Table 1, we obtain that $0.69 > 0$. Therefore, when a sufficiently large amount of data reveals the true state:
+\collaps{Press here to see how all three decision theories arrive at the same optimal treatment rule under point identification.}{First, notice that treatment $b$ is ranked above treatment $a$ in state 1. One can see this by looking at the $\mathrm{E}[\mathrm{log} \, y]$ row in the table above, since $1.83 > 1.60$. Next, notice that treatment $a$ is ranked above treatment $b$ in state 2: looking at the $\mathrm{E}[\mathrm{log} \, y]$  row in the table above, we obtain that $0.69 > 0$. Therefore, when a sufficiently large amount of data reveals the true state:
 
 A **Bayesian** evaluator would put probability 1 on the true state and select a treatment rule that assigns everyone to treatment $b$ in state 1 (since $1.83 > 1.60$) and assigns everyone to treatment $a$ in state 2 (since $0.69 > 0$).
 
@@ -131,7 +122,18 @@ In other words, when the state is known, all three decision theories execute the
 
 }
 
-\collaps{Press here to see how the choice of representation of the social preferences under certainty is irrelevant under point identification.}{Notice that the treatment rule that assigns everyone to treatment $b$ is ranked above the treatment rule that assigns everyone to treatment $a$ in state 1 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: looking at the corresponding rows from Tables 1 and 2 above, in the state 1 columns, we obtain that $1.83 > 1.60$ and $6.21 > 4.93$. Notice also that the treatment rule that assigns everyone to treatment $a$ is ranked above the treatment rule that assigns everyone to treatment $b$ in state 2 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: again, looking at the corresponding rows from Tables 1 and 2 above, in the state 2 columns, we obtain that $0.69 > 0$ and $2 > 1$. Therefore, both of these measures rank the prospects in the same way, on a state by state basis. This is simply due to the fact that these representations can be obtained from one another via a monotone transformation. In other words, when we have reached certainty or near certainty about the true state of the world, it does not matter which representation we use. They all give the same, correct answer.
+\collaps{Press here to see how the choice of representation of the social preferences under certainty is irrelevant under point identification.}{As we discussed in  [Social Preferences Under Uncertainty and Ambiguity](../uncertainty-and-ambiguity/#illustration), the egalitarian equivalent representation of the social preferences discussed above is given by the [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of outcomes, shown in the row labeled $\mathrm{GM}[y]$ in Table 2 below:
+
+~~~
+<div style="text-align: center;">
+  <img src="/assets/ee3.png" alt="ee representation">
+  <p><strong>Table 2</strong></p>
+</div>
+~~~
+
+Now let's consider how the information in Tables 1 and 2 help us make Point 2:
+
+First, notice that the treatment rule that assigns everyone to treatment $b$ is ranked above the treatment rule that assigns everyone to treatment $a$ in state 1 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: looking at the corresponding rows from Tables 1 and 2 above, in the state 1 columns, we obtain that $1.83 > 1.60$ and $6.21 > 4.93$. Notice also that the treatment rule that assigns everyone to treatment $a$ is ranked above the treatment rule that assigns everyone to treatment $b$ in state 2 according to both the $\mathrm{E}[\mathrm{log} \, y]$ and the $\mathrm{GM}[y]$ measures: again, looking at the corresponding rows from Tables 1 and 2 above, in the state 2 columns, we obtain that $0.69 > 0$ and $2 > 1$. Therefore, both of these measures rank the prospects in the same way, on a state by state basis. This is simply due to the fact that these representations can be obtained from one another via a monotone transformation. In other words, when we have reached certainty or near certainty about the true state of the world, it does not matter which representation we use. They all give the same, correct answer.
 }
 
 \collaps{Press here to see how all three decision theories arrive at potentially different optimal treatment rules under partial identification.}{Assume that, even after gathering very large amounts of data, the state space still consists of states 1 and 2. Our evaluation is summarized in our expanded version of Table 2, as seen below:

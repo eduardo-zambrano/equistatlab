@@ -70,16 +70,14 @@ The choice of generator determines the kind of evaluator we are facing. In parti
 * The *IN* evaluator is associated with the linear ([*utilitarian*](https://en.wikipedia.org/wiki/Utilitarianism)) generator $f(y)=y.$
 
 * All *inequality averse* evaluators (*IA*) are associated with strictly concave ([*prioritarian*](https://www.cambridge.org/core/books/prioritarianism-in-practice/introduction/22CF2479EE6187C11314621EA1AE1B54))  generators. In particular,
+  - The *CDPI* evaluator is the prioritarian evaluator associated with the generator $f(y)=-2^{-\frac{y}{L}}$ for $L>0$.
+  - The *CRPI* evaluator is the prioritarian evaluator associated with the  generator $f(y)= - y^{\frac{1}{\log_2 (k)}}$  for $k\in(0,1)$.
 
-- The *CDPI* evaluator is the prioritarian evaluator associated with the generator $f(y)=-2^{-\frac{y}{L}}$ for $L>0$.
+These two representations correspond to interpretable formulations of (1) translation-invariant [^1] social preferences and (2) a specific subclass of scale-invariant (homogeneous) [^2] social preferences, respectively. 
 
-- The *CRPI* evaluator is the prioritarian evaluator associated with the  generator $f(y)= - y^{\frac{1}{\log_2 (k)}}$  for $k\in(0,1)$.
+We mentioned above that none of the translation-invariant evaluators would offer income protection to individuals whose income was less than $L$. Past that income level, they protect a fraction of income given by $1 - \frac{L}{y}$. Notice that this fraction is smaller, the smaller the income level, $y$, in the status quo. On the other hand, the scale-invariant evaluators considered above protect a constant fraction of income, $k$.
 
-These last two are interpretable representations of (1) the translation invariant [^1] social preferences and (2) a subclass of the homogeneous[^2] social preferences, respectively. 
-
-We mentioned above that none of the translation invariant evaluators would offer income protection to individuals whose income was less than $L$. Past that income level, they protect a fraction of income given by $1 - \frac{L}{y}$. Notice that this fraction is smaller, the smaller the income level, $y$, in the status quo. On the other hand, the homogeneous evaluators considered above protect a constant fraction of income, $k$.
-
-Motivated by these findings, we propose a class of social preferences
+Motivated by these findings, we propose a novel class of social preferences
 that, starting from a guaranteed income, protect a higher fraction of the sacrificed individual's income the lower their income. In addition to relating levels of protected income to coefficients of inequality, we also characterize the classes of additively separable social welfare functions that guarantee specific (absolute or relative) levels of protection. See [Fleurbaey and Zambrano 2024](https://arxiv.org/abs/2408.04814) for details.
 
 ## Endnotes
