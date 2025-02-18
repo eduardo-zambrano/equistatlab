@@ -30,11 +30,11 @@ Below, I offer an informal discussion of the key points covered in this project.
 
 The optimal treatment choice apparatus described in [Manski 2024](https://www.cambridge.org/core/journals/econometric-theory/article/identification-and-statistical-decision-theory/968454BD865C607D58DDB15F8FA179BF) is based on statistical decision theory. Let's first describe what  this theory aims to do and how it differs from the standard treatment evaluation methodology based on hypothesis testing.
 
-Traditional methods for optimal treatment assignment vary in focus. Hypothesis testing aims to estimate treatment effects and determine whether the precision of the estimate justifies a treatment choice, emphasizing statistical significance. In contrast, statistical decision theory prioritizes the quality of the decision itself, asking, “How good is this decision in terms of outcomes?” rather than, “How precise is the estimate?” This perspective aligns treatment assignment with desired outcomes, even when precise estimation is challenging, infeasible, or of secondary importance.
+When it comes to optimal treatment assignment, traditional methods based on hypothesis testing and statistical decision theory have distinct goals. The methods based on hypothesis testing typically focus on obtaining quality estimates of the treatment effects and then deciding whether the estimates are precise enough to justify a particular treatment choice, often emphasizing statistical significance and confidence intervals. In contrast, statistical decision theory shifts the focus entirely to the quality of the decision. It asks, “How good is this decision in terms of outcomes?” rather than, “How precisely have we estimated the treatment effect?” By prioritizing decisions over estimates, statistical decision theory ensures that the treatment assignment process is aligned as closely as possible with what evaluators truly wants more of (and what they might want to avoid), even when precise estimation is challenging, impossible, or of secondary importance.
 
 There are several variants of statistical decision theory, and in this project we work with three of them: Bayesian, maximin, and minimax regret. Each of these three variants first begins by identifying a function that maps incomes to welfare (the evaluator's objective function), and then representing uncertainty about the effect of treatments on outcomes using a set of states of the world. What differs between the approaches is how this welfare is evaluated, compared and aggregated across states.
 
-\collaps{Press here for a primer on how these statistical decision theories work.}{Below I very briefly summarize at a high level what these different decision theories do and how they differ.
+\collaps{Press here for a primer on how these statistical decision theories work.}{Below I very briefly summarize at a high level what these different decision theorists (or evaluators) do and how they differ.
 
 * The **Bayesian** evaluator selects the treatment that leads to the highest expected welfare, where the expectation is taken with respect to a probability measure (called the prior) over the set of states. 
 
@@ -50,7 +50,7 @@ Our example is depicted in the table below:
 
 ![example](/assets/practice.png)
 
-The interpretation is as follows: treatment $a$ yields outcome $4.93$ in state 1 and $2$ in state 2, whereas treatment $b$ yields outcome $6.21$ in state 1 and $1$ in state 2. Those numbers may be a kind of summary of how different individuals fare in each state, but that need not concern us here. Let's for now take these numbers as given.
+The interpretation is as follows: treatment $a$ yields outcome $4.93$ in state 1 and $2$ in state 2, whereas treatment $b$ yields outcome $6.21$ in state 1 and $1$ in state 2. One can think about thhose numbers as providing a specific summary of how different individuals fare in each state, and where they come from need not concern us here, although I will have more to say about that question below. Let's for now take these numbers as given.
 
 A treatment rule assigns individuals to treatments and in the example I focus on treatment rules that assign all individuals to the same treatment.
 
@@ -68,13 +68,13 @@ In [Social Preferences under Uncertainty and Ambiguity](../uncertainty-and-ambig
 
 I will use the same example here to make the four main conceptual points of the present project, as shown below:
 
-> When the presence of sufficient data allows the evaluator to know the true state of the world (the *point identification* case),  the optimal treatment assignment problem: 
+> When the presence of sufficient data allows the evaluator to know the true state of the world (the so-called *point identification* case),  the optimal treatment assignment problem: 
 >
 > 1. Has the same answer for all the statistical decision theories we're considering (Bayesian, maximin, minimax regret).
 >
 > 2. Has the same answer regardless of what representation of the social preferences under certainty the evaluator is using.
 
-> When the presence of even very large amounts of data does not allows the evaluator to know the true state of the world (the *partial identification* case), the optimal treatment assignment problem: 
+> When the presence of even very large amounts of data does not allows the evaluator to know the true state of the world (the so-called *partial identification* case), the optimal treatment assignment problem: 
 >
 > 3. Generally varies depending on which statistical decision theory we will be considering.
 >
