@@ -3,7 +3,7 @@
 
 # The Econometrics of Inequality Sensitive Treatment Effect Estimation
 
-Decision makers often have a strong interest in understanding the distributional effects of different practices, but existing analyses of these experiments often either fail to adequately consider these issues or lack a clear economic framework for evaluating them. The research program of the EquiStat Lab seeks to bridge this gap by developing a statistical framework for analyzing distributional impacts in interventions, building on modern welfare economic theory. This will provide a more comprehensive and rigorous approach to evaluation that brings both efficiency and distributional concerns to the analysis.
+Decision-makers increasingly require robust insights into how interventions affect diverse populations. Traditional analyses often overlook distributional effects or lack a coherent economic framework for proper evaluation. The EquiStat Lab addresses this critical gap by developing sophisticated statistical methodologies that precisely measure and characterize distributional impacts across interventions, firmly grounded in modern welfare economic theory. Our approach integrates efficiency considerations and equity concerns into a unified analytical framework, enabling more comprehensive and nuanced policy evaluations that capture the full spectrum of societal impacts from interventions and other policy tools.
 
 This material is based upon work supported by the [National Science Foundation](https://www.nsf.gov/) under [Grant # 2313969](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2313969). **Principal Investigator**: [Eduardo Zambrano](https://eduardo-zambrano.github.io/).
 
