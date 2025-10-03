@@ -103,6 +103,7 @@
 <p>To provide additional context to the example, you may imagine that treatment \(b\), if it works well &#40;which happens in state 1&#41;, it generates a distribution of outcomes with a large mean and a large spread &#40;of 3, 8 and 10&#41;, whereas if it does not work well &#40;which happens in state 2&#41;, it generates a distribution of outcomes with no spread and very low outcome values &#40;of 1 for each individual&#41;. In turn, if treatment \(a\) works well, it generates a distribution of outcomes with moderate mean and low spread &#40;of 4, 5 and 6&#41;, whereas if it does not work well &#40;which happens in state 2&#41;, it generates moderately low and equal outcomes &#40;of 2 for each individual&#41;. One can think of treatment \(b\) as one that either works very well for almost everybody or not at all, and treatment \(a\) is a less extreme version of the same kind of policy. </p>
 <p>Consider, in addition, an inequality averse evaluator with \(f\) given by the logarithm function. This means that, given a prospect \(y\), the evaluator computes, for each state \(s\), the magnitude \({\frac{1}{3}}(\ln y_1^s + \ln y_2^s + \ln y_3^s)\). </p>
 <p>These computations are shown, for prospects \(y(a)\) and \(y(b)\), in the row labeled \(\mathrm{E}[\mathrm{log} \, y]\) in the table below:</p>
+<p><img src="/assets/f.png" alt="f is log" /></p>
 <p>Assume further that the evaluator is a risk-neutral decision maker, with priors of \((\frac{2}{3},\frac{1}{3})\) on states 1 and 2 respectively. </p>
 <p>This evaluator prefers prospect \(y(a)\) to prospect \(y(b)\), since the expected value of these &#40;average&#41; log measures is \(1.29\) for Prospect \(y(a)\) and \(1.22\) for Prospect \(y(b)\), as seen in the row labeled \(\mathrm{E}\big[\mathrm{E}[\mathrm{log} \, y]\big]\) in the table above.</p>
 <p>However, an equivalent representation of those social preferences <em>in any given state</em> is the <a href="https://en.wikipedia.org/wiki/Geometric_mean">geometric mean</a> of outcomes. Say we were to use this representation. This means that, given a prospect \(y\), the evaluator would compute, for each state \(s\), the magnitude \((y_1^s y_2^s y_3^s)^{\frac{1}{3}}\), shown in the row labeled \(\mathrm{GM}[y]\) in the table below, and the expected value of these geometric mean measures is then \(3.95\) for prospect \(y(a)\) and \(4.48\) for prospect \(y(b)\), shown in the row labeled \(\mathrm{E}\big[\mathrm{GM}[y]\big]\) in the table below. According to this, the evaluator prefers prospect \(y(b)\) to prospect \(y(a)\). </p>
@@ -152,7 +153,7 @@
 </table>
  <hr /></p>
 <div class="page-foot">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Eduardo Zambrano. Last modified: April 02, 2025.
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Eduardo Zambrano. Last modified: October 03, 2025.
     Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
 </div>
 

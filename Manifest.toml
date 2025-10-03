@@ -1,6 +1,6 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.11.4"
+julia_version = "1.11.7"
 manifest_format = "2.0"
 project_hash = "b624ff2117a370fbbc58955a02126cf4545f031e"
 
@@ -72,11 +72,11 @@ version = "1.11.0"
 
 [[deps.Franklin]]
 deps = ["Dates", "DelimitedFiles", "DocStringExtensions", "ExprTools", "FranklinTemplates", "HTTP", "Literate", "LiveServer", "Logging", "Markdown", "NodeJS", "OrderedCollections", "Pkg", "REPL", "Random", "TOML"]
-git-tree-sha1 = "5c846adb0faae92b695bf00531a19e49f3e345c1"
+git-tree-sha1 = "a946c62d489afbc77419d7e99582e3bd2512ac98"
 repo-rev = "master"
-repo-url = "https://github.com/tlienart/Franklin.jl.git"
+repo-url = "https://github.com/JuliaDocs/Franklin.jl.git"
 uuid = "713c75ef-9fc9-4b05-94a9-213340da978e"
-version = "0.10.95"
+version = "0.10.96"
 
 [[deps.FranklinTemplates]]
 deps = ["LiveServer"]
