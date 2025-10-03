@@ -66,6 +66,8 @@ Consider, in addition, an inequality averse evaluator with $f$ given by the loga
 
 These computations are shown, for prospects $y(a)$ and $y(b)$, in the row labeled $\mathrm{E}[\mathrm{log} \, y]$ in the table below:
 
+![f is log](/assets/f.png)
+
 Assume further that the evaluator is a risk-neutral decision maker, with priors of $(\frac{2}{3},\frac{1}{3})$ on states 1 and 2 respectively. 
 
 This evaluator prefers prospect $y(a)$ to prospect $y(b)$, since the expected value of these (average) log measures is $1.29$ for Prospect $y(a)$ and $1.22$ for Prospect $y(b)$, as seen in the row labeled $\mathrm{E}\big[\mathrm{E}[\mathrm{log} \, y]\big]$ in the table above.
